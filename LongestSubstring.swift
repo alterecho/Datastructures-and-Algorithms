@@ -13,11 +13,11 @@ class LongestSubstring: Solution {
     "LongestSubstring"
   }
   
-  func problemStatement() -> String {
+  var problemStatement: String {
     return "Given a string s, find the length of the longest substring without repeating characters."
   }
   
-  func lengthOfLongestSubstring(_ s: String) -> Int {
+  func lengthOfLongestSubstring_gpt(_ s: String) -> Int {
       var charIndex = [Character: Int]()
       var maxLength = 0
       var start = 0
@@ -33,7 +33,7 @@ class LongestSubstring: Solution {
       return maxLength
   }
   
-  func lengthOfLongestSubstring_ownSolution(input: String) -> Int {
+  func lengthOfLongestSubstring_my(input: String) -> Int {
     var dict = [Character : Character]()
     var longest = 0
     for c in input {
@@ -50,7 +50,7 @@ class LongestSubstring: Solution {
 
   
   func execute(input: String = "abcabcbb") -> Int? {
-    let longest = lengthOfLongestSubstring_ownSolution(input: input)
+    let longest = lengthOfLongestSubstring_my(input: input)
     print(
       String(
         describing: longest

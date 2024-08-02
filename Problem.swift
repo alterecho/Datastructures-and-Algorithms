@@ -12,7 +12,7 @@ protocol Solution {
   associatedtype Result
   
   var title: String {get}
-  func problemStatement() -> String
+  var problemStatement: String { get }
   @discardableResult
   func execute(input: Input) -> Result
 }

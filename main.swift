@@ -19,8 +19,10 @@ graph.add(edge: ("l", "a"))
 
 print(graph)
 
-let q1 = TwoSum()
-let q2 = LongestSubstring()
+//let q1 = TwoSum()
+//let q2 = LongestSubstring()
+let q3 = MergeSortedLists()
 
-q1.execute()
-q2.execute()
+//q1.execute()
+//q2.execute()
+q3.execute()

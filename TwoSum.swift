@@ -13,7 +13,7 @@ class TwoSum: Solution {
     "Two Sum"
   }
   
-  func problemStatement() -> String {
+  var problemStatement: String {
     return "Given an array of integers nums and an integer target, return the indices of the two numbers such that they add up to target."
   }
   
