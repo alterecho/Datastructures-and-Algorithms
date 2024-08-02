@@ -8,7 +8,11 @@
 import Foundation
 
 protocol Solution {
+  associatedtype Input
   associatedtype Result
+  
+  var title: String {get}
   func problemStatement() -> String
-  func execute() -> Result
+  @discardableResult
+  func execute(input: Input) -> Result
 }

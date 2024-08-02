@@ -20,4 +20,7 @@ graph.add(edge: ("l", "a"))
 print(graph)
 
 let q1 = TwoSum()
-print(q1.execute())
+let q2 = LongestSubstring()
+
+q1.execute()
+q2.execute()
