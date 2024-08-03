@@ -19,10 +19,10 @@ graph.add(edge: ("l", "a"))
 
 print(graph)
 
-//let q1 = TwoSum()
-//let q2 = LongestSubstring()
-let q3 = MergeSortedLists()
+let solutons: [any Solution] = [
+  TwoSum(),
+  LongestSubstring(),
+  MergeSortedLists(),
+  ValidParentheses()
+]
 
-//q1.execute()
-//q2.execute()
-q3.execute()
