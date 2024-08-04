@@ -10,13 +10,13 @@
 		577921EE2C55073B005C5333 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577921ED2C55073B005C5333 /* main.swift */; };
 		577921F52C5645A2005C5333 /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577921F42C5645A2005C5333 /* Graph.swift */; };
 		57CCF8792C5BE09300723257 /* TwoSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CCF8782C5BE09300723257 /* TwoSum.swift */; };
-		57CCF87B2C5BE0C000723257 /* Problem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CCF87A2C5BE0C000723257 /* Problem.swift */; };
+		57CCF87B2C5BE0C000723257 /* Solution.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CCF87A2C5BE0C000723257 /* Solution.swift */; };
 		57CCF87D2C5C781A00723257 /* LongestSubstring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CCF87C2C5C781A00723257 /* LongestSubstring.swift */; };
 		57CCF87F2C5CC29C00723257 /* MergeSortedLists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CCF87E2C5CC29C00723257 /* MergeSortedLists.swift */; };
 		57CCF8812C5DCCB400723257 /* ValidParentheses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CCF8802C5DCCB400723257 /* ValidParentheses.swift */; };
 		57CCF8832C5E9D3C00723257 /* MaxSubArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CCF8822C5E9D3C00723257 /* MaxSubArray.swift */; };
 		57E502D12C5F94A5007A6115 /* DSATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E502D02C5F94A5007A6115 /* DSATests.swift */; };
-		57E502D82C5F9520007A6115 /* Problem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CCF87A2C5BE0C000723257 /* Problem.swift */; };
+		57E502D82C5F9520007A6115 /* Solution.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CCF87A2C5BE0C000723257 /* Solution.swift */; };
 		57E502D92C5F9520007A6115 /* TwoSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CCF8782C5BE09300723257 /* TwoSum.swift */; };
 		57E502DA2C5F9807007A6115 /* LongestSubstring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CCF87C2C5C781A00723257 /* LongestSubstring.swift */; };
 		57E502DB2C5F980A007A6115 /* MergeSortedLists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CCF87E2C5CC29C00723257 /* MergeSortedLists.swift */; };
@@ -52,7 +52,7 @@
 		577921ED2C55073B005C5333 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		577921F42C5645A2005C5333 /* Graph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
 		57CCF8782C5BE09300723257 /* TwoSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoSum.swift; sourceTree = "<group>"; };
-		57CCF87A2C5BE0C000723257 /* Problem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem.swift; sourceTree = "<group>"; };
+		57CCF87A2C5BE0C000723257 /* Solution.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution.swift; sourceTree = "<group>"; };
 		57CCF87C2C5C781A00723257 /* LongestSubstring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongestSubstring.swift; sourceTree = "<group>"; };
 		57CCF87E2C5CC29C00723257 /* MergeSortedLists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeSortedLists.swift; sourceTree = "<group>"; };
 		57CCF8802C5DCCB400723257 /* ValidParentheses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidParentheses.swift; sourceTree = "<group>"; };
@@ -103,13 +103,9 @@
 			isa = PBXGroup;
 			children = (
 				577921ED2C55073B005C5333 /* main.swift */,
-				57CCF87A2C5BE0C000723257 /* Problem.swift */,
-				57CCF8782C5BE09300723257 /* TwoSum.swift */,
-				57CCF87C2C5C781A00723257 /* LongestSubstring.swift */,
-				57CCF87E2C5CC29C00723257 /* MergeSortedLists.swift */,
-				57CCF8802C5DCCB400723257 /* ValidParentheses.swift */,
-				57CCF8822C5E9D3C00723257 /* MaxSubArray.swift */,
 				577921F62C56468D005C5333 /* DS */,
+				57E502DF2C5FD4C0007A6115 /* Algorithms */,
+				57E502DE2C5FD4AA007A6115 /* Solutions */,
 			);
 			path = DSA;
 			sourceTree = "<group>";
@@ -118,7 +114,6 @@
 			isa = PBXGroup;
 			children = (
 				577921F42C5645A2005C5333 /* Graph.swift */,
-				57E502D72C5F94C5007A6115 /* DSA.xctestplan */,
 			);
 			path = DS;
 			sourceTree = "<group>";
@@ -126,9 +121,30 @@
 		57E502CF2C5F94A5007A6115 /* DSATests */ = {
 			isa = PBXGroup;
 			children = (
+				57E502D72C5F94C5007A6115 /* DSA.xctestplan */,
 				57E502D02C5F94A5007A6115 /* DSATests.swift */,
 			);
 			path = DSATests;
+			sourceTree = "<group>";
+		};
+		57E502DE2C5FD4AA007A6115 /* Solutions */ = {
+			isa = PBXGroup;
+			children = (
+				57CCF87A2C5BE0C000723257 /* Solution.swift */,
+				57CCF8782C5BE09300723257 /* TwoSum.swift */,
+				57CCF87C2C5C781A00723257 /* LongestSubstring.swift */,
+				57CCF87E2C5CC29C00723257 /* MergeSortedLists.swift */,
+				57CCF8802C5DCCB400723257 /* ValidParentheses.swift */,
+				57CCF8822C5E9D3C00723257 /* MaxSubArray.swift */,
+			);
+			path = Solutions;
+			sourceTree = "<group>";
+		};
+		57E502DF2C5FD4C0007A6115 /* Algorithms */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Algorithms;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,7 +241,7 @@
 				57CCF87F2C5CC29C00723257 /* MergeSortedLists.swift in Sources */,
 				57CCF87D2C5C781A00723257 /* LongestSubstring.swift in Sources */,
 				57CCF8832C5E9D3C00723257 /* MaxSubArray.swift in Sources */,
-				57CCF87B2C5BE0C000723257 /* Problem.swift in Sources */,
+				57CCF87B2C5BE0C000723257 /* Solution.swift in Sources */,
 				577921F52C5645A2005C5333 /* Graph.swift in Sources */,
 				577921EE2C55073B005C5333 /* main.swift in Sources */,
 				57CCF8812C5DCCB400723257 /* ValidParentheses.swift in Sources */,
@@ -238,7 +254,7 @@
 			files = (
 				57E502D12C5F94A5007A6115 /* DSATests.swift in Sources */,
 				57E502DC2C5F980C007A6115 /* ValidParentheses.swift in Sources */,
-				57E502D82C5F9520007A6115 /* Problem.swift in Sources */,
+				57E502D82C5F9520007A6115 /* Solution.swift in Sources */,
 				57E502DA2C5F9807007A6115 /* LongestSubstring.swift in Sources */,
 				57E502DD2C5F980E007A6115 /* MaxSubArray.swift in Sources */,
 				57E502DB2C5F980A007A6115 /* MergeSortedLists.swift in Sources */,
