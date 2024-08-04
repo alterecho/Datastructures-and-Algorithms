@@ -8,11 +8,17 @@
 import Foundation
 
 
-class TwoSum: Solution {
+public class TwoSum: Solution {
+  
+  public init() {
+    
+  }
+  
   typealias Input = (
     array:[Int],
     target: Int
   )
+  typealias Output = (Int, Int)
   var title: String {
     "Two Sum"
   }
@@ -22,7 +28,7 @@ class TwoSum: Solution {
   }
   
   @discardableResult
-  func execute(input: Input) -> (Int, Int)? {
+  func execute(input: Input) -> Output? {
     var result: (Int, Int)?
     var map = [Int : Int]()
     for (index, num) in input.array.enumerated() {
@@ -36,7 +42,7 @@ class TwoSum: Solution {
     return result
   }
   
-  func executeDefault() -> (Int, Int)? {
+  func executeDefault() -> Output? {
     return execute(input: (array: [2, 7, 11, 15], target: 9))
   }
 }

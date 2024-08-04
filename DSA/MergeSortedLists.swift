@@ -23,7 +23,20 @@ class MergeSortedLists: Solution {
     return MergeSortedLists.Input(l1, l2)
   }()
   
-  public class ListNode {
+  public class ListNode: Equatable {
+    public static func == (lhs: MergeSortedLists.ListNode, rhs: MergeSortedLists.ListNode) -> Bool {
+      var lhs: MergeSortedLists.ListNode? = lhs
+      var rhs: MergeSortedLists.ListNode? = rhs
+      while lhs != nil {
+        if lhs?.val != rhs?.val {
+          return false
+        }
+        lhs = lhs?.next
+        rhs = rhs?.next
+      }
+      return true
+    }
+    
       public var val: Int
       public var next: ListNode?
       public init(_ val: Int) { self.val = val; self.next = nil; }

@@ -30,15 +30,29 @@ class MaxSubArray: Solution {
       
       return maxSoFar
   }
+  
+  func maxSubArray_attempt(input: [Int]) -> Int {
+    var accumulator = 0
+    return input.reduce(0) { partialResult, num in
+      let sum = accumulator + num
+      if num > sum {
+        accumulator = num
+      } else {
+        accumulator = sum
+      }
+      
+      return max(accumulator, partialResult)
+    }
+  }
 
   func execute(input: [Int]) -> Int? {
-    let res = maxSubArray_gpt(input)
+//    let res = maxSubArray_gpt(input)
+    let res = maxSubArray_attempt(input: input)
     print("\(input) max subarray: \(res)")
     return res
   }
   
   func executeDefault() -> Int? {
-    execute(input: [-2,1,-3,4,-1,2,1,-5,4])
+    execute(input: [-2, 1, -3, 4, -1, 2, 1, -5, 4])
   }
-  
 }
