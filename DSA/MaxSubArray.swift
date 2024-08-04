@@ -52,7 +52,7 @@ class MaxSubArray: Solution {
     return res
   }
   
-  func executeDefault() -> Int? {
+  func execute() -> Int? {
     execute(input: [-2, 1, -3, 4, -1, 2, 1, -5, 4])
   }
 }

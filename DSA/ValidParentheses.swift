@@ -44,7 +44,7 @@ class ValidParentheses: Solution {
     return res
   }
   
-  func executeDefault() -> Bool? {
+  func execute() -> Bool? {
     execute(input: "()[]{}")
   }
 }

@@ -60,7 +60,7 @@ class LongestSubstring: Solution {
     return (longest > 0 ? longest : nil)
   }
   
-  func executeDefault() -> Int? {
+  func execute() -> Int? {
     execute(input: "abcabcbb")
   }
 }

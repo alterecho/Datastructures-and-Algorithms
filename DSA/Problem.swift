@@ -16,5 +16,5 @@ protocol Solution {
   @discardableResult
   func execute(input: Input) -> Result?
   @discardableResult
-  func executeDefault() -> Result?
+  func execute() -> Result?
 }

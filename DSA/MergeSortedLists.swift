@@ -111,7 +111,7 @@ class MergeSortedLists: Solution {
     return mergedList
   }
   
-  func executeDefault() -> ListNode? {
+  func execute() -> ListNode? {
     return execute(input: Self.defaultInput)
   }
 }

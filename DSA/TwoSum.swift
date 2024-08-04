@@ -42,7 +42,7 @@ public class TwoSum: Solution {
     return result
   }
   
-  func executeDefault() -> Output? {
+  func execute() -> Output? {
     return execute(input: (array: [2, 7, 11, 15], target: 9))
   }
 }

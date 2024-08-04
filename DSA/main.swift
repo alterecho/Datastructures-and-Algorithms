@@ -28,5 +28,5 @@ let solutions: [any Solution] = [
 ]
 
 solutions.forEach { solution in
-  solution.executeDefault()
+  solution.execute()
 }
