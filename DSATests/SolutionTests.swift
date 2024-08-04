@@ -8,7 +8,7 @@
 import XCTest
 @testable import DSA
 
-final class DSATests: XCTestCase {
+final class SolutionTests: XCTestCase {
 
   func test_twoSum() {
     let solution = TwoSum()

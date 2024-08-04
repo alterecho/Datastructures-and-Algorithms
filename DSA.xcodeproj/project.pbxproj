@@ -15,13 +15,18 @@
 		57CCF87F2C5CC29C00723257 /* MergeSortedLists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CCF87E2C5CC29C00723257 /* MergeSortedLists.swift */; };
 		57CCF8812C5DCCB400723257 /* ValidParentheses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CCF8802C5DCCB400723257 /* ValidParentheses.swift */; };
 		57CCF8832C5E9D3C00723257 /* MaxSubArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CCF8822C5E9D3C00723257 /* MaxSubArray.swift */; };
-		57E502D12C5F94A5007A6115 /* DSATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E502D02C5F94A5007A6115 /* DSATests.swift */; };
+		57E502D12C5F94A5007A6115 /* SolutionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E502D02C5F94A5007A6115 /* SolutionTests.swift */; };
 		57E502D82C5F9520007A6115 /* Solution.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CCF87A2C5BE0C000723257 /* Solution.swift */; };
 		57E502D92C5F9520007A6115 /* TwoSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CCF8782C5BE09300723257 /* TwoSum.swift */; };
 		57E502DA2C5F9807007A6115 /* LongestSubstring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CCF87C2C5C781A00723257 /* LongestSubstring.swift */; };
 		57E502DB2C5F980A007A6115 /* MergeSortedLists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CCF87E2C5CC29C00723257 /* MergeSortedLists.swift */; };
 		57E502DC2C5F980C007A6115 /* ValidParentheses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CCF8802C5DCCB400723257 /* ValidParentheses.swift */; };
 		57E502DD2C5F980E007A6115 /* MaxSubArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CCF8822C5E9D3C00723257 /* MaxSubArray.swift */; };
+		57E502E12C5FD525007A6115 /* BinarySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E502E02C5FD525007A6115 /* BinarySearch.swift */; };
+		57E502E32C5FD540007A6115 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E502E22C5FD540007A6115 /* Search.swift */; };
+		57E502E52C5FD7FC007A6115 /* AlgorithmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E502E42C5FD7FC007A6115 /* AlgorithmTests.swift */; };
+		57E502E62C5FD8B5007A6115 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E502E22C5FD540007A6115 /* Search.swift */; };
+		57E502E72C5FD8B5007A6115 /* BinarySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E502E02C5FD525007A6115 /* BinarySearch.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,8 +63,11 @@
 		57CCF8802C5DCCB400723257 /* ValidParentheses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidParentheses.swift; sourceTree = "<group>"; };
 		57CCF8822C5E9D3C00723257 /* MaxSubArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxSubArray.swift; sourceTree = "<group>"; };
 		57E502CE2C5F94A5007A6115 /* DSATests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DSATests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		57E502D02C5F94A5007A6115 /* DSATests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSATests.swift; sourceTree = "<group>"; };
+		57E502D02C5F94A5007A6115 /* SolutionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolutionTests.swift; sourceTree = "<group>"; };
 		57E502D72C5F94C5007A6115 /* DSA.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = DSA.xctestplan; path = DSATests/DSA.xctestplan; sourceTree = SOURCE_ROOT; };
+		57E502E02C5FD525007A6115 /* BinarySearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearch.swift; sourceTree = "<group>"; };
+		57E502E22C5FD540007A6115 /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
+		57E502E42C5FD7FC007A6115 /* AlgorithmTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgorithmTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,7 +130,8 @@
 			isa = PBXGroup;
 			children = (
 				57E502D72C5F94C5007A6115 /* DSA.xctestplan */,
-				57E502D02C5F94A5007A6115 /* DSATests.swift */,
+				57E502D02C5F94A5007A6115 /* SolutionTests.swift */,
+				57E502E42C5FD7FC007A6115 /* AlgorithmTests.swift */,
 			);
 			path = DSATests;
 			sourceTree = "<group>";
@@ -143,6 +152,8 @@
 		57E502DF2C5FD4C0007A6115 /* Algorithms */ = {
 			isa = PBXGroup;
 			children = (
+				57E502E22C5FD540007A6115 /* Search.swift */,
+				57E502E02C5FD525007A6115 /* BinarySearch.swift */,
 			);
 			path = Algorithms;
 			sourceTree = "<group>";
@@ -239,10 +250,12 @@
 			files = (
 				57CCF8792C5BE09300723257 /* TwoSum.swift in Sources */,
 				57CCF87F2C5CC29C00723257 /* MergeSortedLists.swift in Sources */,
+				57E502E12C5FD525007A6115 /* BinarySearch.swift in Sources */,
 				57CCF87D2C5C781A00723257 /* LongestSubstring.swift in Sources */,
 				57CCF8832C5E9D3C00723257 /* MaxSubArray.swift in Sources */,
 				57CCF87B2C5BE0C000723257 /* Solution.swift in Sources */,
 				577921F52C5645A2005C5333 /* Graph.swift in Sources */,
+				57E502E32C5FD540007A6115 /* Search.swift in Sources */,
 				577921EE2C55073B005C5333 /* main.swift in Sources */,
 				57CCF8812C5DCCB400723257 /* ValidParentheses.swift in Sources */,
 			);
@@ -252,8 +265,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57E502D12C5F94A5007A6115 /* DSATests.swift in Sources */,
+				57E502D12C5F94A5007A6115 /* SolutionTests.swift in Sources */,
+				57E502E52C5FD7FC007A6115 /* AlgorithmTests.swift in Sources */,
 				57E502DC2C5F980C007A6115 /* ValidParentheses.swift in Sources */,
+				57E502E62C5FD8B5007A6115 /* Search.swift in Sources */,
+				57E502E72C5FD8B5007A6115 /* BinarySearch.swift in Sources */,
 				57E502D82C5F9520007A6115 /* Solution.swift in Sources */,
 				57E502DA2C5F9807007A6115 /* LongestSubstring.swift in Sources */,
 				57E502DD2C5F980E007A6115 /* MaxSubArray.swift in Sources */,
