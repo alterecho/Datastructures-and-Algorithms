@@ -8,7 +8,6 @@
 import Foundation
 
 class ValidParentheses: Solution {
-  
   var title: String {
     String(describing: type(of: self))
   }
@@ -39,9 +38,13 @@ class ValidParentheses: Solution {
     return stack.isEmpty
   }
     
-  func execute(input: String = "()[]{}") -> Bool {
+  func execute(input: String) -> Bool? {
     let res = isValid_gpt(string: input)
     print("\(input) isValid (paranthesis): \(res)")
     return res
+  }
+  
+  func executeDefault() -> Bool? {
+    execute(input: "()[]{}")
   }
 }

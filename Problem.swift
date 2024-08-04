@@ -14,5 +14,7 @@ protocol Solution {
   var title: String {get}
   var problemStatement: String { get }
   @discardableResult
-  func execute(input: Input) -> Result
+  func execute(input: Input) -> Result?
+  @discardableResult
+  func executeDefault() -> Result?
 }

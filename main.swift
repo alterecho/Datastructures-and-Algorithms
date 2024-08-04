@@ -19,10 +19,14 @@ graph.add(edge: ("l", "a"))
 
 print(graph)
 
-let solutons: [any Solution] = [
+let solutions: [any Solution] = [
   TwoSum(),
   LongestSubstring(),
   MergeSortedLists(),
-  ValidParentheses()
+  ValidParentheses(),
+  MaxSubArray()
 ]
 
+solutions.forEach { solution in
+  solution.executeDefault()
+}

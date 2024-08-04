@@ -49,7 +49,7 @@ class LongestSubstring: Solution {
   }
 
   
-  func execute(input: String = "abcabcbb") -> Int? {
+  func execute(input: String) -> Int? {
     let longest = lengthOfLongestSubstring_my(input: input)
     print(
       String(
@@ -58,5 +58,9 @@ class LongestSubstring: Solution {
     )
     
     return (longest > 0 ? longest : nil)
+  }
+  
+  func executeDefault() -> Int? {
+    execute(input: "abcabcbb")
   }
 }

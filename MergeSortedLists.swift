@@ -77,7 +77,7 @@ class MergeSortedLists: Solution {
     return l?.next
   }
   
-  func execute(input: MergeSortedLists.Input = MergeSortedLists.defaultInput) -> ListNode? {
+  func execute(input: Input) -> ListNode? {
     let mergedList = mergeTwoLists_my(l1: input.l1, l2: input.l2)
     let string = mergedList.map { node in
       var node: ListNode? = node
@@ -96,5 +96,9 @@ class MergeSortedLists: Solution {
     
     print(string ?? "")
     return mergedList
+  }
+  
+  func executeDefault() -> ListNode? {
+    return execute(input: Self.defaultInput)
   }
 }
