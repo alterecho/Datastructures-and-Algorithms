@@ -29,6 +29,9 @@
 		57E502E72C5FD8B5007A6115 /* BinarySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E502E02C5FD525007A6115 /* BinarySearch.swift */; };
 		57E502EC2C60A430007A6115 /* Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E502EB2C60A430007A6115 /* Sort.swift */; };
 		57E502EE2C60A499007A6115 /* QuickSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E502ED2C60A499007A6115 /* QuickSort.swift */; };
+		57E502F02C60C852007A6115 /* SortAlgorithmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E502EF2C60C852007A6115 /* SortAlgorithmTests.swift */; };
+		57E502F12C60C8EB007A6115 /* Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E502EB2C60A430007A6115 /* Sort.swift */; };
+		57E502F22C60C8EB007A6115 /* QuickSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E502ED2C60A499007A6115 /* QuickSort.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +75,7 @@
 		57E502E42C5FD7FC007A6115 /* SearchAlgorithmTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAlgorithmTests.swift; sourceTree = "<group>"; };
 		57E502EB2C60A430007A6115 /* Sort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sort.swift; sourceTree = "<group>"; };
 		57E502ED2C60A499007A6115 /* QuickSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickSort.swift; sourceTree = "<group>"; };
+		57E502EF2C60C852007A6115 /* SortAlgorithmTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortAlgorithmTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +140,7 @@
 				57E502D72C5F94C5007A6115 /* DSA.xctestplan */,
 				57E502D02C5F94A5007A6115 /* SolutionTests.swift */,
 				57E502E42C5FD7FC007A6115 /* SearchAlgorithmTests.swift */,
+				57E502EF2C60C852007A6115 /* SortAlgorithmTests.swift */,
 			);
 			path = DSATests;
 			sourceTree = "<group>";
@@ -289,6 +294,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57E502F12C60C8EB007A6115 /* Sort.swift in Sources */,
+				57E502F22C60C8EB007A6115 /* QuickSort.swift in Sources */,
+				57E502F02C60C852007A6115 /* SortAlgorithmTests.swift in Sources */,
 				57E502D12C5F94A5007A6115 /* SolutionTests.swift in Sources */,
 				57E502E52C5FD7FC007A6115 /* SearchAlgorithmTests.swift in Sources */,
 				57E502DC2C5F980C007A6115 /* ValidParentheses.swift in Sources */,
