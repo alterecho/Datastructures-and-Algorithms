@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+protocol Sort {
+  associatedtype T: Comparable
+  
+  init(elements: [T])
+  var elements: [T] { get }
+}
