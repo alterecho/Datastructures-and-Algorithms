@@ -11,20 +11,51 @@ import XCTest
 @testable import DSA
 
 final class SortAlgorithmTests: XCTestCase {
+  typealias Expectation = (input: [Int], expectedOutput: [Int])
+  private var dataSet: [Expectation]!
+  
+  override func setUp() {
+    super.setUp()
+    dataSet = [
+      (input: [1, -1],
+       expectedOutput: [-1, 1]),
+      (input: [0, -1, 1],
+       expectedOutput: [-1, 0, 1]),
+      (input: [2, 5, 6, 0, -1, -5],
+       expectedOutput: [-5, -1, 0, 2, 5, 6]),
+      (input: [0],
+       expectedOutput: [0]),
+      (input: [],
+       expectedOutput: [])
+    ]
+  }
+  
+  override func tearDown() {
+    super.tearDown()
+    dataSet = nil
+  }
+  
   func test_quickSort() {
     // given
     // when
-    var sortedElements = QuickSort(elements: [2, 5, 6, 0, -1, -5]).elements
-    // then
-    XCTAssertEqual(sortedElements, [-5, -1, 0, 2, 5, 6])
+    dataSet.forEach { expectation in
+      // then
+      XCTAssertEqual(
+        QuickSort(elements: expectation.input).elements,
+        expectation.expectedOutput
+      )
+    }
+  }
+  
+  func test_mergeSort() {
+    // given
     // when
-    sortedElements = QuickSort(elements: [0]).elements
-    // then
-    XCTAssertEqual(sortedElements, [0])
-    // when
-    sortedElements = QuickSort(elements: []).elements
-    // then
-    XCTAssertEqual(sortedElements, [])
-
+    dataSet.forEach { expectation in
+      // then
+      XCTAssertEqual(
+        MergeSort(elements: expectation.input).elements,
+        expectation.expectedOutput
+      )
+    }
   }
 }
