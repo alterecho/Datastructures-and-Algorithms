@@ -34,6 +34,8 @@
 		57E502F22C60C8EB007A6115 /* QuickSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E502ED2C60A499007A6115 /* QuickSort.swift */; };
 		57E502F42C60CA21007A6115 /* MergeSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E502F32C60CA21007A6115 /* MergeSort.swift */; };
 		57E502F52C60EAA0007A6115 /* MergeSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E502F32C60CA21007A6115 /* MergeSort.swift */; };
+		57E502F72C60FF45007A6115 /* BubbleSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E502F62C60FF45007A6115 /* BubbleSort.swift */; };
+		57E502F82C610048007A6115 /* BubbleSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E502F62C60FF45007A6115 /* BubbleSort.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +81,7 @@
 		57E502ED2C60A499007A6115 /* QuickSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickSort.swift; sourceTree = "<group>"; };
 		57E502EF2C60C852007A6115 /* SortAlgorithmTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortAlgorithmTests.swift; sourceTree = "<group>"; };
 		57E502F32C60CA21007A6115 /* MergeSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeSort.swift; sourceTree = "<group>"; };
+		57E502F62C60FF45007A6115 /* BubbleSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleSort.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +188,7 @@
 				57E502EB2C60A430007A6115 /* Sort.swift */,
 				57E502ED2C60A499007A6115 /* QuickSort.swift */,
 				57E502F32C60CA21007A6115 /* MergeSort.swift */,
+				57E502F62C60FF45007A6115 /* BubbleSort.swift */,
 			);
 			path = Sort;
 			sourceTree = "<group>";
@@ -284,6 +288,7 @@
 				57CCF87F2C5CC29C00723257 /* MergeSortedLists.swift in Sources */,
 				57E502E12C5FD525007A6115 /* BinarySearch.swift in Sources */,
 				57CCF87D2C5C781A00723257 /* LongestSubstring.swift in Sources */,
+				57E502F72C60FF45007A6115 /* BubbleSort.swift in Sources */,
 				57CCF8832C5E9D3C00723257 /* MaxSubArray.swift in Sources */,
 				57CCF87B2C5BE0C000723257 /* Solution.swift in Sources */,
 				577921F52C5645A2005C5333 /* Graph.swift in Sources */,
@@ -301,6 +306,7 @@
 			files = (
 				57E502F12C60C8EB007A6115 /* Sort.swift in Sources */,
 				57E502F22C60C8EB007A6115 /* QuickSort.swift in Sources */,
+				57E502F82C610048007A6115 /* BubbleSort.swift in Sources */,
 				57E502F02C60C852007A6115 /* SortAlgorithmTests.swift in Sources */,
 				57E502D12C5F94A5007A6115 /* SolutionTests.swift in Sources */,
 				57E502F52C60EAA0007A6115 /* MergeSort.swift in Sources */,

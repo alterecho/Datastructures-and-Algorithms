@@ -58,4 +58,16 @@ final class SortAlgorithmTests: XCTestCase {
       )
     }
   }
+  
+  func test_bubbleSort() {
+    // given
+    // when
+    dataSet.forEach { expectation in
+      // then
+      XCTAssertEqual(
+        BubbleSort(elements: expectation.input).elements,
+        expectation.expectedOutput
+      )
+    }
+  }
 }
