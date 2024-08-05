@@ -24,7 +24,7 @@
 		57E502DD2C5F980E007A6115 /* MaxSubArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CCF8822C5E9D3C00723257 /* MaxSubArray.swift */; };
 		57E502E12C5FD525007A6115 /* BinarySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E502E02C5FD525007A6115 /* BinarySearch.swift */; };
 		57E502E32C5FD540007A6115 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E502E22C5FD540007A6115 /* Search.swift */; };
-		57E502E52C5FD7FC007A6115 /* AlgorithmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E502E42C5FD7FC007A6115 /* AlgorithmTests.swift */; };
+		57E502E52C5FD7FC007A6115 /* SearchAlgorithmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E502E42C5FD7FC007A6115 /* SearchAlgorithmTests.swift */; };
 		57E502E62C5FD8B5007A6115 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E502E22C5FD540007A6115 /* Search.swift */; };
 		57E502E72C5FD8B5007A6115 /* BinarySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E502E02C5FD525007A6115 /* BinarySearch.swift */; };
 /* End PBXBuildFile section */
@@ -67,7 +67,7 @@
 		57E502D72C5F94C5007A6115 /* DSA.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = DSA.xctestplan; path = DSATests/DSA.xctestplan; sourceTree = SOURCE_ROOT; };
 		57E502E02C5FD525007A6115 /* BinarySearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearch.swift; sourceTree = "<group>"; };
 		57E502E22C5FD540007A6115 /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
-		57E502E42C5FD7FC007A6115 /* AlgorithmTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgorithmTests.swift; sourceTree = "<group>"; };
+		57E502E42C5FD7FC007A6115 /* SearchAlgorithmTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAlgorithmTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,7 +131,7 @@
 			children = (
 				57E502D72C5F94C5007A6115 /* DSA.xctestplan */,
 				57E502D02C5F94A5007A6115 /* SolutionTests.swift */,
-				57E502E42C5FD7FC007A6115 /* AlgorithmTests.swift */,
+				57E502E42C5FD7FC007A6115 /* SearchAlgorithmTests.swift */,
 			);
 			path = DSATests;
 			sourceTree = "<group>";
@@ -274,7 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				57E502D12C5F94A5007A6115 /* SolutionTests.swift in Sources */,
-				57E502E52C5FD7FC007A6115 /* AlgorithmTests.swift in Sources */,
+				57E502E52C5FD7FC007A6115 /* SearchAlgorithmTests.swift in Sources */,
 				57E502DC2C5F980C007A6115 /* ValidParentheses.swift in Sources */,
 				57E502E62C5FD8B5007A6115 /* Search.swift in Sources */,
 				57E502E72C5FD8B5007A6115 /* BinarySearch.swift in Sources */,

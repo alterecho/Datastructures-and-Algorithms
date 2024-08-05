@@ -10,7 +10,7 @@ import Foundation
 import XCTest
 @testable import DSA
 
-final class AlgorithmTests: XCTestCase {
+final class SearchAlgorithmTests: XCTestCase {
   func test_binarySearch() {
     // given
     let elements = [1, 2, 3, 6, 7]
