@@ -152,10 +152,18 @@
 		57E502DF2C5FD4C0007A6115 /* Algorithms */ = {
 			isa = PBXGroup;
 			children = (
+				57E502E82C60A380007A6115 /* Search */,
+			);
+			path = Algorithms;
+			sourceTree = "<group>";
+		};
+		57E502E82C60A380007A6115 /* Search */ = {
+			isa = PBXGroup;
+			children = (
 				57E502E22C5FD540007A6115 /* Search.swift */,
 				57E502E02C5FD525007A6115 /* BinarySearch.swift */,
 			);
-			path = Algorithms;
+			path = Search;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
