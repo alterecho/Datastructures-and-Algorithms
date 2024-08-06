@@ -43,6 +43,8 @@
 		57E503042C6129DA007A6115 /* HeapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E503032C6129DA007A6115 /* HeapTests.swift */; };
 		57E503052C612B4F007A6115 /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E502FE2C6128A1007A6115 /* Heap.swift */; };
 		57E503062C612B4F007A6115 /* MinHeap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E503012C61297B007A6115 /* MinHeap.swift */; };
+		57E503DC2C62306E007A6115 /* Fibonacci.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E503DB2C62306E007A6115 /* Fibonacci.swift */; };
+		57E503DD2C623B26007A6115 /* Fibonacci.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E503DB2C62306E007A6115 /* Fibonacci.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +96,7 @@
 		57E502FE2C6128A1007A6115 /* Heap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heap.swift; sourceTree = "<group>"; };
 		57E503012C61297B007A6115 /* MinHeap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinHeap.swift; sourceTree = "<group>"; };
 		57E503032C6129DA007A6115 /* HeapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeapTests.swift; sourceTree = "<group>"; };
+		57E503DB2C62306E007A6115 /* Fibonacci.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fibonacci.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +177,7 @@
 				57CCF87E2C5CC29C00723257 /* MergeSortedLists.swift */,
 				57CCF8802C5DCCB400723257 /* ValidParentheses.swift */,
 				57CCF8822C5E9D3C00723257 /* MaxSubArray.swift */,
+				57E503DB2C62306E007A6115 /* Fibonacci.swift */,
 			);
 			path = Solutions;
 			sourceTree = "<group>";
@@ -333,6 +337,7 @@
 				57E503022C61297B007A6115 /* MinHeap.swift in Sources */,
 				577921EE2C55073B005C5333 /* main.swift in Sources */,
 				57E502FC2C612678007A6115 /* AdjacencyMatrixGraph.swift in Sources */,
+				57E503DC2C62306E007A6115 /* Fibonacci.swift in Sources */,
 				57CCF8812C5DCCB400723257 /* ValidParentheses.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -358,6 +363,7 @@
 				57E502DA2C5F9807007A6115 /* LongestSubstring.swift in Sources */,
 				57E502DD2C5F980E007A6115 /* MaxSubArray.swift in Sources */,
 				57E502DB2C5F980A007A6115 /* MergeSortedLists.swift in Sources */,
+				57E503DD2C623B26007A6115 /* Fibonacci.swift in Sources */,
 				57E502D92C5F9520007A6115 /* TwoSum.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
