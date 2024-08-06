@@ -9,6 +9,12 @@ import Foundation
 
 class LongestSubstring: Solution {
   
+  private let input: String
+  
+  required init(input: String = "abcabcbb") {
+    self.input = input
+  }
+  
   var title: String {
     "LongestSubstring"
   }
@@ -48,8 +54,8 @@ class LongestSubstring: Solution {
     return longest
   }
 
-  
-  func execute(input: String) -> Int? {
+  @discardableResult
+  func execute() -> Int? {
     let longest = lengthOfLongestSubstring_my(input: input)
     print(
       String(
@@ -58,9 +64,5 @@ class LongestSubstring: Solution {
     )
     
     return (longest > 0 ? longest : nil)
-  }
-  
-  func execute() -> Int? {
-    execute(input: "abcabcbb")
   }
 }

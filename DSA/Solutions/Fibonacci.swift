@@ -16,6 +16,12 @@ public class Fibonacci: Solution {
     return "Fibonacci"
   }
   
+  private let input: Int
+  
+  required init(input: Int = 3) {
+    self.input = input
+  }
+  
   private func fibonacci_recursive(count: Int) -> Int {
     guard count > 1 else {
       return count
@@ -28,13 +34,9 @@ public class Fibonacci: Solution {
   }
   
   @discardableResult
-  func execute(input: Int) -> Int? {
+  func execute() -> Int? {
     return fibonacci_recursive(
       count: input
     )
-  }
-  
-  func execute() -> Int? {
-    return execute(input: 3)
   }
 }

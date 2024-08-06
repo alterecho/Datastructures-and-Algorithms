@@ -11,17 +11,19 @@ import XCTest
 final class SolutionTests: XCTestCase {
 
   func test_twoSum() {
-    let solution = TwoSum()
-    let input = (array: [2, 7, 11, 15], target: 9)
-    let output = solution.execute(input: input)
+    let output = TwoSum(
+      input: (array: [2, 7, 11, 15], target: 9)
+    ).execute()
+    
     XCTAssertEqual(output?.0, 0)
     XCTAssertEqual(output?.1, 1)
   }
   
   func test_longestSubString() {
-    let solution = LongestSubstring()
-    let output = solution.execute(input: "abcabcbb")
-    XCTAssertEqual(output, 3)
+    XCTAssertEqual(
+      LongestSubstring(input: "abcabcbb").execute(),
+      3
+    )
   }
 
   func test_mergeSortedLists() {
@@ -40,23 +42,25 @@ final class SolutionTests: XCTestCase {
     expected.next?.next?.next?.next = MergeSortedLists.ListNode(4)
     expected.next?.next?.next?.next?.next = MergeSortedLists.ListNode(4)
 
-
-    let solution = MergeSortedLists()
-    let output = solution.execute(input: (l1, l2))
-    XCTAssertEqual(output, expected)
+    XCTAssertEqual(
+      MergeSortedLists(input: (l1, l2)).execute(),
+      expected
+    )
   }
 
   func test_validParanthesis() {
-    let solution = ValidParentheses()
-    let output = solution.execute(input: "()[]{}")
-    XCTAssertEqual(output, true)
+    XCTAssertEqual(
+      ValidParentheses(input: "()[]{}").execute(),
+      true
+    )
 
   }
 
   func test_maxSubArray() {
-    let solution = MaxSubArray()
-    let output = solution.execute(input: [-2, 1, -3, 4, -1, 2, 1, -5, 4])
-    XCTAssertEqual(output, 6)
+    XCTAssertEqual(
+      MaxSubArray(input: [-2, 1, -3, 4, -1, 2, 1, -5, 4]).execute(),
+      6
+    )
 
   }
 //  1 + 1 = 2
@@ -78,9 +82,7 @@ final class SolutionTests: XCTestCase {
     
     expectations.forEach { input, expectedOutput in
       XCTAssertEqual(
-        Fibonacci().execute(
-          input: input
-        ),
+        Fibonacci(input: input).execute(),
         expectedOutput
       )
     }

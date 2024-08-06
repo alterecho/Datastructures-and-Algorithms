@@ -21,6 +21,12 @@ class ValidParentheses: Solution {
 """
   }
   
+  private let input: String
+  
+  required init(input: String = "()[]{}") {
+    self.input = input
+  }
+  
   func isValid_gpt(string: String) -> Bool {
     var stack = [Character]()
     let pairs: [Character: Character] = [")": "(", "}": "{", "]": "["]
@@ -38,13 +44,9 @@ class ValidParentheses: Solution {
     return stack.isEmpty
   }
     
-  func execute(input: String) -> Bool? {
+  func execute() -> Bool? {
     let res = isValid_gpt(string: input)
     print("\(input) isValid (paranthesis): \(res)")
     return res
-  }
-  
-  func execute() -> Bool? {
-    execute(input: "()[]{}")
   }
 }

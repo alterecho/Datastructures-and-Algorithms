@@ -11,10 +11,10 @@ protocol Solution {
   associatedtype Input
   associatedtype Result
   
+  init(input: Input)
+  
   var title: String {get}
   var problemStatement: String { get }
-  @discardableResult
-  func execute(input: Input) -> Result?
   @discardableResult
   func execute() -> Result?
 }

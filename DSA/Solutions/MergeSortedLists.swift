@@ -8,8 +8,13 @@
 import Foundation
 
 class MergeSortedLists: Solution {
-  
   typealias Input = (l1: ListNode?, l2: ListNode?)
+  
+  private let input: Input
+  
+  required init(input: Input = MergeSortedLists.defaultInput) {
+    self.input = input
+  }
   
   private static let defaultInput: Input = {
     let l1 = ListNode(1)
@@ -73,7 +78,7 @@ class MergeSortedLists: Solution {
   
   func mergeTwoLists_my(l1: ListNode?, l2: ListNode?) -> ListNode? {
     var l1 = l1, l2 = l2
-    var l: ListNode? = ListNode(0)
+    let l: ListNode? = ListNode(0)
     var stepper: ListNode? = l
     while let l1_u = l1, let l2_u = l2 {
       if l1_u.val <= l2_u.val {
@@ -90,7 +95,7 @@ class MergeSortedLists: Solution {
     return l?.next
   }
   
-  func execute(input: Input) -> ListNode? {
+  func execute() -> ListNode? {
     let mergedList = mergeTwoLists_my(l1: input.l1, l2: input.l2)
     let string = mergedList.map { node in
       var node: ListNode? = node
@@ -109,9 +114,5 @@ class MergeSortedLists: Solution {
     
     print(string ?? "")
     return mergedList
-  }
-  
-  func execute() -> ListNode? {
-    return execute(input: Self.defaultInput)
   }
 }

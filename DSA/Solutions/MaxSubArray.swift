@@ -19,6 +19,12 @@ class MaxSubArray: Solution {
 """
   }
   
+  let input: [Int]
+  
+  required init(input: [Int] = [-2, 1, -3, 4, -1, 2, 1, -5, 4]) {
+    self.input = input
+  }
+  
   func maxSubArray_gpt(_ nums: [Int]) -> Int {
       var maxSoFar = nums[0]
       var maxEndingHere = nums[0]
@@ -45,14 +51,10 @@ class MaxSubArray: Solution {
     }
   }
 
-  func execute(input: [Int]) -> Int? {
+  func execute() -> Int? {
 //    let res = maxSubArray_gpt(input)
     let res = maxSubArray_attempt(input: input)
     print("\(input) max subarray: \(res)")
     return res
-  }
-  
-  func execute() -> Int? {
-    execute(input: [-2, 1, -3, 4, -1, 2, 1, -5, 4])
   }
 }
