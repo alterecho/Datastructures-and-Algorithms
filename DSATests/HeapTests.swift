@@ -9,13 +9,18 @@ import XCTest
 @testable import DSA
 
 final class HeapTests: XCTestCase {
+  typealias Expectation = (input: [Int], expectedOutput: [Int])
   func test_minHeapInit() {
     // given
-    let array = [2, 1, 3, 6, 4, 7]
+    let dataSet: [Expectation] = [
+//      (input: [2, 1, 3, 6, 4, 7], expectedOutput: [1, 2, 3, 4, 6, 7]),
+      (input: [4, 10, 3, 5, 1], expectedOutput: [1, 4, 3, 5, 10])
+    ]
     // when
-    let heap = MinHeap(array: array)
-    // then
-    XCTAssertEqual(heap.array, [1, 2, 3, 4, 6, 7])
+    dataSet.forEach { input, expectedOutput in
+      // then
+      XCTAssertEqual(MinHeap(array: input).array, expectedOutput)
+    }
   }
 }
 
