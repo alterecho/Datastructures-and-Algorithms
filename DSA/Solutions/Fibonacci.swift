@@ -7,6 +7,14 @@
 
 import Foundation
 
+/*
+ F(n)=F(n−1)+F(n−2)F(n)=F(n−1)+F(n−2) for n≥2n≥2
+ 1 + 1 = 2
+         2 + 1 = 3
+                 3 + 2 = 5
+                         5 + 3 = 8
+                                 8 + 5 = 13
+*/
 public class Fibonacci: Solution {
   var title: String {
     "Two Sum"
@@ -33,9 +41,26 @@ public class Fibonacci: Solution {
     )
   }
   
+//  0 + 1 = 1 + 1 = 2 + 1 = 3 + 2 = 5 + 3 = 8 + 5 = 13 
+  private func fibonacci_dynamic(count: Int) -> Int {
+    guard count > 1 else {
+      return count
+    }
+    
+    var a = 0
+    var b = 1
+    for _ in 1..<count {
+      let b_prev = b
+      b = b + a
+      a = b_prev
+    }
+    
+    return b
+  }
+
   @discardableResult
   func execute() -> Int? {
-    return fibonacci_recursive(
+    return fibonacci_dynamic(
       count: input
     )
   }

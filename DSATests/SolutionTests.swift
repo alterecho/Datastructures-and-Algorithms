@@ -62,12 +62,7 @@ final class SolutionTests: XCTestCase {
       6
     )
 
-  }
-//  1 + 1 = 2
-//      1 + 2 = 3
-//          2 + 3 = 5
-//              3 + 5 = 8
-                     
+  }                     
   
   func test_fibonacci() {
     let expectations: [
@@ -75,6 +70,8 @@ final class SolutionTests: XCTestCase {
     ] = zip(
       [0, 1, 2, 3, 4, 5, 6, 7],
       [0, 1, 1, 2, 3, 5, 8, 13]
+//      [7],
+//      [13]
     ).map { zippedElement in
       (input: zippedElement.0,
        expectedOutput: zippedElement.1)
