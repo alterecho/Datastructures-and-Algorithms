@@ -15,5 +15,5 @@ protocol Heap {
   func insert(_: T)
   func remove() -> T?
   func peek() -> T?
-  mutating func heapify(rootIndex: Int?)
+  mutating func heapify()
 }

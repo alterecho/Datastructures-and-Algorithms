@@ -13,7 +13,7 @@ final class HeapTests: XCTestCase {
   func test_minHeapInit() {
     // given
     let dataSet: [Expectation] = [
-//      (input: [2, 1, 3, 6, 4, 7], expectedOutput: [1, 2, 3, 4, 6, 7]),
+      (input: [2, 1, 3, 6, 4, 7], expectedOutput: [1, 2, 3, 6, 4, 7]),
       (input: [4, 10, 3, 5, 1], expectedOutput: [1, 4, 3, 5, 10])
     ]
     // when
