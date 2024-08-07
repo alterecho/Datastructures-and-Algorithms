@@ -22,9 +22,6 @@ public class TwoSum: Solution {
     target: Int
   )
   typealias Output = (Int, Int)
-  var title: String {
-    "Two Sum"
-  }
   
   var problemStatement: String {
     return "Given an array of integers nums and an integer target, return the indices of the two numbers such that they add up to target."

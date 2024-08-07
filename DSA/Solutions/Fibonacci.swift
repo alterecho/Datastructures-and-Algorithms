@@ -16,10 +16,6 @@ import Foundation
                                  8 + 5 = 13
 */
 public class Fibonacci: Solution {
-  var title: String {
-    "Two Sum"
-  }
-  
   var problemStatement: String {
     return "Fibonacci"
   }
@@ -49,12 +45,12 @@ public class Fibonacci: Solution {
     
     var a = 0
     var b = 1
-    for _ in 1..<count {
+    (1..<count).forEach { _ in
       let b_prev = b
       b = b + a
       a = b_prev
+
     }
-    
     return b
   }
 

@@ -14,11 +14,7 @@ class LongestSubstring: Solution {
   required init(input: String = "abcabcbb") {
     self.input = input
   }
-  
-  var title: String {
-    "LongestSubstring"
-  }
-  
+    
   var problemStatement: String {
     return "Given a string s, find the length of the longest substring without repeating characters."
   }

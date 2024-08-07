@@ -8,11 +8,6 @@
 import Foundation
 
 class MaxSubArray: Solution {
-  
-  var title: String {
-    String(describing: type(of: self))
-  }
-  
   var problemStatement: String {
 """
   Given an integer array nums, find the contiguous subarray (containing at least one number) which has the largest sum and return its sum.

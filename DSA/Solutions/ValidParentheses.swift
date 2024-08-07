@@ -7,11 +7,7 @@
 
 import Foundation
 
-class ValidParentheses: Solution {
-  var title: String {
-    String(describing: type(of: self))
-  }
-  
+class ValidParentheses: Solution {  
   var problemStatement: String {
 """
     Given a string containing just the characters '(', ')', '{', '}', '[', and ']'`, determine if the input string is valid. An input string is valid if:

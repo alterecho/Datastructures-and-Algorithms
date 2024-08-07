@@ -45,6 +45,8 @@
 		57E503062C612B4F007A6115 /* MinHeap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E503012C61297B007A6115 /* MinHeap.swift */; };
 		57E503DC2C62306E007A6115 /* Fibonacci.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E503DB2C62306E007A6115 /* Fibonacci.swift */; };
 		57E503DD2C623B26007A6115 /* Fibonacci.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E503DB2C62306E007A6115 /* Fibonacci.swift */; };
+		57E503DF2C63CB78007A6115 /* AmazonInterviewQ1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E503DE2C63CB78007A6115 /* AmazonInterviewQ1.swift */; };
+		57E503E12C63E719007A6115 /* AmazonInterviewQ2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E503E02C63E719007A6115 /* AmazonInterviewQ2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +99,8 @@
 		57E503012C61297B007A6115 /* MinHeap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinHeap.swift; sourceTree = "<group>"; };
 		57E503032C6129DA007A6115 /* HeapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeapTests.swift; sourceTree = "<group>"; };
 		57E503DB2C62306E007A6115 /* Fibonacci.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fibonacci.swift; sourceTree = "<group>"; };
+		57E503DE2C63CB78007A6115 /* AmazonInterviewQ1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmazonInterviewQ1.swift; sourceTree = "<group>"; };
+		57E503E02C63E719007A6115 /* AmazonInterviewQ2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmazonInterviewQ2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +182,8 @@
 				57CCF8802C5DCCB400723257 /* ValidParentheses.swift */,
 				57CCF8822C5E9D3C00723257 /* MaxSubArray.swift */,
 				57E503DB2C62306E007A6115 /* Fibonacci.swift */,
+				57E503DE2C63CB78007A6115 /* AmazonInterviewQ1.swift */,
+				57E503E02C63E719007A6115 /* AmazonInterviewQ2.swift */,
 			);
 			path = Solutions;
 			sourceTree = "<group>";
@@ -327,6 +333,8 @@
 				57CCF87D2C5C781A00723257 /* LongestSubstring.swift in Sources */,
 				57E502FA2C61266D007A6115 /* AdjacencyListGraph.swift in Sources */,
 				57E502F72C60FF45007A6115 /* BubbleSort.swift in Sources */,
+				57E503DF2C63CB78007A6115 /* AmazonInterviewQ1.swift in Sources */,
+				57E503E12C63E719007A6115 /* AmazonInterviewQ2.swift in Sources */,
 				57CCF8832C5E9D3C00723257 /* MaxSubArray.swift in Sources */,
 				57CCF87B2C5BE0C000723257 /* Solution.swift in Sources */,
 				577921F52C5645A2005C5333 /* Graph.swift in Sources */,

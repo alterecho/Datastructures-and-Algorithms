@@ -18,3 +18,9 @@ protocol Solution {
   @discardableResult
   func execute() -> Result?
 }
+
+extension Solution {
+  var title: String {
+    String(describing: type(of: self))
+  }
+}
