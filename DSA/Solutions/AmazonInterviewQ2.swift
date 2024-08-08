@@ -9,7 +9,7 @@ import Foundation
 
 import Foundation
 
-public class AmazonInterviewQ1: Solution {
+public class AmazonInterviewQ2: Solution {
   
   typealias Input = (word: String, a: Int, b: Int)
   
@@ -60,7 +60,7 @@ After 2 operations, a maximum of 8 consecutive ON servers can be obtained.
   }
   
   func execute() -> Int? {
-    
+    return nil
   }
 }
 

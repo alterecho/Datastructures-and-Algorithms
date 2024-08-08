@@ -29,7 +29,8 @@ public class AmazonInterviewQ1: Solution {
   ', while "bba" is not.
   Example
   word = "abbacc", a = -1, b = 2.
-  word
+  redundant words:
+  word  | vowels  | consonants  | result
   "abb" 1 2 3
   "bba" 1 2 3
   "bac" 1 2 3
@@ -38,8 +39,32 @@ public class AmazonInterviewQ1: Solution {
   """
   }
   
+  static let vowels: [Character] = ["a", "e", "i", "o", "u",]
+  
+  private func isRedundant(subString: String) -> Bool {
+    let charArray = Array(subString)
+    let numberOfVowels = charArray.reduce(0) { partialResult, character in
+      if Self.vowels.contains(character) {
+        return partialResult + 1
+      }
+      return partialResult
+    }
+    let numberOfConsonants = charArray.count - numberOfVowels
+    return charArray.count == (input.a * numberOfVowels + input.b * numberOfConsonants)
+  }
+  
   func execute() -> Int? {
+    var numberOfRedundant = 0
+    let characterArray = Array(input.word)
+    for i in 0..<characterArray.count {
+      for j in i..<characterArray.count {
+        let subString = String(characterArray[i...j])
+        print("subString = \(subString)")
+        numberOfRedundant += isRedundant(subString: subString) ? 1 : 0
+      }
+    }
     
+    return numberOfRedundant
   }
 }
 
