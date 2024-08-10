@@ -11,18 +11,27 @@ class ReverseLinkedList: Solution {
   
   private let input: LinkedList<Int>
   
-  required init(input: LinkedList<Int>) {
+  required init(
+    input: LinkedList<Int> = LinkedList(1, 2, 4, 1, 3, 4)
+  ) {
     self.input = input
   }
-  
-  private static let defaultInput: LinkedList = LinkedList(1, 2, 4, 1, 3, 4)
-  
 
   var problemStatement: String {
-    "Merge two sorted linked lists and return it as a new sorted list. The new list should be made by splicing together the nodes of the first two lists"
+    "Reverse a linked list"
   }
     
-  func execute() -> LinkedList<Int>.Node? {
-    return nil
+  func execute() -> LinkedList<Int>? {
+    var iterator = input.root
+    print("before reverse: \(input)")
+    while iterator != nil {
+      let next = iterator?.next
+      iterator?.set(next: iterator?.previous)
+      iterator?.set(previous: iterator?.next)
+      input.update(root: iterator)
+      iterator = next
+    }
+    print("after reverse: \(input)")
+    return input
   }
 }

@@ -8,7 +8,7 @@
 import Foundation
 
 
-public class LinkedList<T: Equatable>: Equatable {
+public class LinkedList<T: Equatable>: Equatable, CustomStringConvertible {
   public class Node {
     public let value: T
     private(set) var next: Node?
@@ -26,7 +26,7 @@ public class LinkedList<T: Equatable>: Equatable {
     }
   }
   
-  let root: Node?
+  private(set) var root: Node?
   
   init(_ values: T...) {
     guard let firstValue = values.first else {
@@ -40,6 +40,25 @@ public class LinkedList<T: Equatable>: Equatable {
       partialResult.set(next: node)
       return partialResult
     }
+  }
+  
+  public var description: String {
+    var string = ""
+    
+    var iterator = root
+    while iterator != nil {
+      guard let value = iterator?.value else {
+        continue
+      }
+      string += string.isEmpty ? "" : "->"
+      string += "\(value)"
+      iterator = iterator?.next
+    }
+    return string
+  }
+  
+  func update(root: Node?) {
+    self.root = root
   }
   
   public static func == (lhs: LinkedList<T>, rhs: LinkedList<T>) -> Bool {

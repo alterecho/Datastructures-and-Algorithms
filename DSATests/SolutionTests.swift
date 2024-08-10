@@ -27,20 +27,11 @@ final class SolutionTests: XCTestCase {
   }
 
   func test_mergeSortedLists() {
-    let l1 = MergeSortedLists.ListNode(1)
-    l1.next = MergeSortedLists.ListNode(2)
-    l1.next?.next = MergeSortedLists.ListNode(4)
+    let l1 = LinkedList(1, 2, 4)
 
-    let l2 = MergeSortedLists.ListNode(1)
-    l2.next = MergeSortedLists.ListNode(3)
-    l2.next?.next = MergeSortedLists.ListNode(4)
+    let l2 = LinkedList(1, 3, 4)
     
-    let expected = MergeSortedLists.ListNode(1)
-    expected.next = MergeSortedLists.ListNode(1)
-    expected.next?.next = MergeSortedLists.ListNode(2)
-    expected.next?.next?.next = MergeSortedLists.ListNode(3)
-    expected.next?.next?.next?.next = MergeSortedLists.ListNode(4)
-    expected.next?.next?.next?.next?.next = MergeSortedLists.ListNode(4)
+    let expected = LinkedList(1, 1, 2, 3, 4, 4)
 
     XCTAssertEqual(
       MergeSortedLists(input: (l1, l2)).execute(),
@@ -61,7 +52,6 @@ final class SolutionTests: XCTestCase {
       MaxSubArray(input: [-2, 1, -3, 4, -1, 2, 1, -5, 4]).execute(),
       6
     )
-
   }                     
   
   func test_fibonacci() {
@@ -70,8 +60,6 @@ final class SolutionTests: XCTestCase {
     ] = zip(
       [0, 1, 2, 3, 4, 5, 6, 7],
       [0, 1, 1, 2, 3, 5, 8, 13]
-//      [7],
-//      [13]
     ).map { zippedElement in
       (input: zippedElement.0,
        expectedOutput: zippedElement.1)
@@ -108,6 +96,21 @@ final class SolutionTests: XCTestCase {
     expectations.forEach { input, expectedOutput in
       XCTAssertEqual(
         AmazonInterviewQ2(input: input).execute(),
+        expectedOutput
+      )
+    }
+  }
+  
+  func test_reverseLinkedList() {
+    let expectations = [(
+      input: LinkedList<Int>(1, 2, 3, 4),
+      expectedOutput: LinkedList<Int>(4, 3, 2, 1)
+    )]
+    
+    
+    expectations.forEach { input, expectedOutput in
+      XCTAssertEqual(
+        ReverseLinkedList(input: input).execute()!,
         expectedOutput
       )
     }
