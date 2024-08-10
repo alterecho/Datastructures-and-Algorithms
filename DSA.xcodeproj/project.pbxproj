@@ -10,6 +10,8 @@
 		575EC4482C6643800030D5A4 /* ReverseLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575EC4472C6643800030D5A4 /* ReverseLinkedList.swift */; };
 		575EC44A2C6643C30030D5A4 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575EC4492C6643C30030D5A4 /* LinkedList.swift */; };
 		575EC44F2C6782E30030D5A4 /* Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575EC44E2C6782E30030D5A4 /* Tree.swift */; };
+		575EC4512C67D3190030D5A4 /* TreeOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575EC4502C67D3190030D5A4 /* TreeOperations.swift */; };
+		575EC4532C67D8B00030D5A4 /* TreeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575EC4522C67D8B00030D5A4 /* TreeTests.swift */; };
 		577921EE2C55073B005C5333 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577921ED2C55073B005C5333 /* main.swift */; };
 		577921F52C5645A2005C5333 /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577921F42C5645A2005C5333 /* Graph.swift */; };
 		57CCF8792C5BE09300723257 /* TwoSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CCF8782C5BE09300723257 /* TwoSum.swift */; };
@@ -81,6 +83,8 @@
 		575EC4472C6643800030D5A4 /* ReverseLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReverseLinkedList.swift; sourceTree = "<group>"; };
 		575EC4492C6643C30030D5A4 /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
 		575EC44E2C6782E30030D5A4 /* Tree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tree.swift; sourceTree = "<group>"; };
+		575EC4502C67D3190030D5A4 /* TreeOperations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeOperations.swift; sourceTree = "<group>"; };
+		575EC4522C67D8B00030D5A4 /* TreeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeTests.swift; sourceTree = "<group>"; };
 		577921EA2C55073B005C5333 /* DSA */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DSA; sourceTree = BUILT_PRODUCTS_DIR; };
 		577921ED2C55073B005C5333 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		577921F42C5645A2005C5333 /* Graph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
@@ -164,6 +168,7 @@
 			children = (
 				575EC4492C6643C30030D5A4 /* LinkedList.swift */,
 				575EC44E2C6782E30030D5A4 /* Tree.swift */,
+				575EC4502C67D3190030D5A4 /* TreeOperations.swift */,
 				57E502FD2C6127A0007A6115 /* Graph */,
 				57E503002C6128A8007A6115 /* Heap */,
 			);
@@ -178,6 +183,7 @@
 				57E502E42C5FD7FC007A6115 /* SearchAlgorithmTests.swift */,
 				57E502EF2C60C852007A6115 /* SortAlgorithmTests.swift */,
 				57E503032C6129DA007A6115 /* HeapTests.swift */,
+				575EC4522C67D8B00030D5A4 /* TreeTests.swift */,
 			);
 			path = DSATests;
 			sourceTree = "<group>";
@@ -360,6 +366,7 @@
 				57E502FC2C612678007A6115 /* AdjacencyMatrixGraph.swift in Sources */,
 				575EC44F2C6782E30030D5A4 /* Tree.swift in Sources */,
 				57E503DC2C62306E007A6115 /* Fibonacci.swift in Sources */,
+				575EC4512C67D3190030D5A4 /* TreeOperations.swift in Sources */,
 				57CCF8812C5DCCB400723257 /* ValidParentheses.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -389,6 +396,7 @@
 				57E502DB2C5F980A007A6115 /* MergeSortedLists.swift in Sources */,
 				57E503DD2C623B26007A6115 /* Fibonacci.swift in Sources */,
 				57E502D92C5F9520007A6115 /* TwoSum.swift in Sources */,
+				575EC4532C67D8B00030D5A4 /* TreeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
