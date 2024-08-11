@@ -57,7 +57,7 @@ public class LinkedList<T: Equatable>: Equatable, CustomStringConvertible {
     return string
   }
   
-  public func update(root: Node?) {
+  public func configure(root: Node?) {
     self.root = root
   }
   

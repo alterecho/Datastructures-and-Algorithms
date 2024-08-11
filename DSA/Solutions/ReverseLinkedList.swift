@@ -28,7 +28,7 @@ public class ReverseLinkedList: Solution {
       let next = iterator?.next
       iterator?.configure(next: iterator?.previous)
       iterator?.configure(previous: iterator?.next)
-      input.update(root: iterator)
+      input.configure(root: iterator)
       iterator = next
     }
     print("after reverse: \(input)")

@@ -63,6 +63,7 @@ public class MergeSortedLists: Solution {
       stepper = stepper?.next
     }
     stepper?.configure(next: l1 ?? l2)
+    l.configure(root: l.root?.next)
     return l
   }
   
