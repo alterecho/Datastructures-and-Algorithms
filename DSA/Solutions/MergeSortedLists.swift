@@ -36,15 +36,15 @@ public class MergeSortedLists: Solution {
       
       while l1 != nil && l2 != nil {
           if l1!.value <= l2!.value {
-              current?.set(next: l1)
+              current?.configure(next: l1)
               l1 = l1?.next
           } else {
-              current?.set(next: l2)
+              current?.configure(next: l2)
               l2 = l2?.next
           }
           current = current?.next
       }
-      current?.set(next: l1 ?? l2)
+      current?.configure(next: l1 ?? l2)
       return dummy.next
   }
   
@@ -54,15 +54,15 @@ public class MergeSortedLists: Solution {
     var stepper: LinkedList.Node? = l.root
     while let l1_u = l1, let l2_u = l2 {
       if l1_u.value <= l2_u.value {
-        stepper?.set(next: l1)
+        stepper?.configure(next: l1)
         l1 = l1?.next
       } else {
-        stepper?.set(next: l2)
+        stepper?.configure(next: l2)
         l2 = l2?.next
       }
       stepper = stepper?.next
     }
-    stepper?.set(next: l1 ?? l2)
+    stepper?.configure(next: l1 ?? l2)
     return l
   }
   

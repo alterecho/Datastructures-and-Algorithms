@@ -17,11 +17,11 @@ public class LinkedList<T: Equatable>: Equatable, CustomStringConvertible {
       self.value = value
     }
     
-    public func set(next: Node?) {
+    public func configure(next: Node?) {
       self.next = next
     }
     
-    public func set(previous: Node?) {
+    public func configure(previous: Node?) {
       self.previous = previous
     }
   }
@@ -33,12 +33,12 @@ public class LinkedList<T: Equatable>: Equatable, CustomStringConvertible {
       root = nil
       return
     }
-    self.root = values.reduce(
-      Node(firstValue)
-    ) { partialResult, value in
-      let node = Node(firstValue)
-      partialResult.set(next: node)
-      return partialResult
+    self.root = Node(firstValue)
+    var iterator = self.root
+    for value in values[1..<values.count] {
+      let node = Node(value)
+      iterator?.configure(next: node)
+      iterator = iterator?.next
     }
   }
   
