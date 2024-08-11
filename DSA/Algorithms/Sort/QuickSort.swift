@@ -7,10 +7,11 @@
 
 import Foundation
 
-class QuickSort<T: Comparable>: Sort {
+public class QuickSort<T: Comparable>: Sort {
   
-  private(set) var elements: [T] = []
-  required init(elements: [T]) {
+  private(set) public var elements: [T] = []
+  
+  public required init(elements: [T]) {
     self.elements = sort(elements: elements)
   }
   

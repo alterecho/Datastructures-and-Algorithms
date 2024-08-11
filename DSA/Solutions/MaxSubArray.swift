@@ -7,8 +7,8 @@
 
 import Foundation
 
-class MaxSubArray: Solution {
-  var problemStatement: String {
+public class MaxSubArray: Solution {
+  public var problemStatement: String {
 """
   Given an integer array nums, find the contiguous subarray (containing at least one number) which has the largest sum and return its sum.
 """
@@ -16,7 +16,7 @@ class MaxSubArray: Solution {
   
   let input: [Int]
   
-  required init(input: [Int] = [-2, 1, -3, 4, -1, 2, 1, -5, 4]) {
+  public required init(input: [Int] = [-2, 1, -3, 4, -1, 2, 1, -5, 4]) {
     self.input = input
   }
   
@@ -46,7 +46,7 @@ class MaxSubArray: Solution {
     }
   }
 
-  func execute() -> Int? {
+  public func execute() -> Int? {
 //    let res = maxSubArray_gpt(input)
     let res = maxSubArray_attempt(input: input)
     print("\(input) max subarray: \(res)")

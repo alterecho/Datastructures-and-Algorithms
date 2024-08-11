@@ -11,24 +11,25 @@ import Foundation
 public class TwoSum: Solution {
   private let input: Input
   
-  required init(
+  public required init(
     input: (array: [Int], target: Int) = (array: [2, 7, 11, 15], target: 9)
   ) {
     self.input = input
   }
   
-  typealias Input = (
+  public typealias Input = (
     array:[Int],
     target: Int
   )
-  typealias Output = (Int, Int)
   
-  var problemStatement: String {
+  public typealias Output = (Int, Int)
+  
+  public var problemStatement: String {
     return "Given an array of integers nums and an integer target, return the indices of the two numbers such that they add up to target."
   }
   
   @discardableResult
-  func execute() -> Output? {
+  public func execute() -> Output? {
     var result: (Int, Int)?
     var map = [Int : Int]()
     for (index, num) in input.array.enumerated() {

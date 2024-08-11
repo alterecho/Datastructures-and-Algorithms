@@ -15,8 +15,8 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "577921E92C55073B005C5333"
-               BuildableName = "DSA"
+               BlueprintIdentifier = "577ECC1A2C68D8E200E43E2E"
+               BuildableName = "DSA.framework"
                BlueprintName = "DSA"
                ReferencedContainer = "container:DSA.xcodeproj">
             </BuildableReference>
@@ -50,8 +50,8 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "577921E92C55073B005C5333"
-            BuildableName = "DSA"
+            BlueprintIdentifier = "577ECC1A2C68D8E200E43E2E"
+            BuildableName = "DSA.framework"
             BlueprintName = "DSA"
             ReferencedContainer = "container:DSA.xcodeproj">
          </BuildableReference>
@@ -67,8 +67,8 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "577921E92C55073B005C5333"
-            BuildableName = "DSA"
+            BlueprintIdentifier = "577ECC1A2C68D8E200E43E2E"
+            BuildableName = "DSA.framework"
             BlueprintName = "DSA"
             ReferencedContainer = "container:DSA.xcodeproj">
          </BuildableReference>

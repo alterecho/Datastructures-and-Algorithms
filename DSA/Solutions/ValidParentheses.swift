@@ -7,8 +7,8 @@
 
 import Foundation
 
-class ValidParentheses: Solution {  
-  var problemStatement: String {
+public class ValidParentheses: Solution {
+  public var problemStatement: String {
 """
     Given a string containing just the characters '(', ')', '{', '}', '[', and ']'`, determine if the input string is valid. An input string is valid if:
 
@@ -19,7 +19,7 @@ class ValidParentheses: Solution {
   
   private let input: String
   
-  required init(input: String = "()[]{}") {
+  public required init(input: String = "()[]{}") {
     self.input = input
   }
   
@@ -40,7 +40,7 @@ class ValidParentheses: Solution {
     return stack.isEmpty
   }
     
-  func execute() -> Bool? {
+  public func execute() -> Bool? {
     let res = isValid_gpt(string: input)
     print("\(input) isValid (paranthesis): \(res)")
     return res

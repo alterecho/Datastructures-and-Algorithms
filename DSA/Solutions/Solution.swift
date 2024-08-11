@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol Solution {
+public protocol Solution {
   associatedtype Input
   associatedtype Result
   
@@ -20,7 +20,7 @@ protocol Solution {
 }
 
 extension Solution {
-  var title: String {
+  public var title: String {
     String(describing: type(of: self))
   }
 }

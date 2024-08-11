@@ -7,23 +7,24 @@
 
 import Foundation
 
-class MergeSortedLists: Solution {
-  typealias Input = (l1: LinkedList<Int>, l2: LinkedList<Int>)
+public class MergeSortedLists: Solution {
+  public typealias Input = (l1: LinkedList<Int>, l2: LinkedList<Int>)
   
   private let input: Input
   
-  required init(input: Input = MergeSortedLists.defaultInput) {
+  public required init(input: Input = MergeSortedLists.defaultInput) {
     self.input = input
   }
   
-  private static let defaultInput: Input = {
+  @usableFromInline
+  static let defaultInput: Input = {
     let l1 = LinkedList(1, 2, 4)
     let l2 = LinkedList(1, 3, 4)
     
     return MergeSortedLists.Input(l1, l2)
   }()
   
-  var problemStatement: String {
+  public var problemStatement: String {
     "Merge two sorted linked lists and return it as a new sorted list. The new list should be made by splicing together the nodes of the first two lists"
   }
   
@@ -65,7 +66,7 @@ class MergeSortedLists: Solution {
     return l
   }
   
-  func execute() -> LinkedList<Int>? {
+  public func execute() -> LinkedList<Int>? {
     let mergedList = mergeTwoLists_my(l1: input.l1, l2: input.l2)
     let string = mergedList.map { node in
       var node: LinkedList.Node? = node.root

@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 public class LinkedList<T: Equatable>: Equatable, CustomStringConvertible {
   public class Node {
     public let value: T
@@ -18,17 +17,18 @@ public class LinkedList<T: Equatable>: Equatable, CustomStringConvertible {
       self.value = value
     }
     
-    func set(next: Node?) {
+    public func set(next: Node?) {
       self.next = next
     }
-    func set(previous: Node?) {
+    
+    public func set(previous: Node?) {
       self.previous = previous
     }
   }
   
   private(set) var root: Node?
   
-  init(_ values: T...) {
+  public init(_ values: T...) {
     guard let firstValue = values.first else {
       root = nil
       return
@@ -57,7 +57,7 @@ public class LinkedList<T: Equatable>: Equatable, CustomStringConvertible {
     return string
   }
   
-  func update(root: Node?) {
+  public func update(root: Node?) {
     self.root = root
   }
   

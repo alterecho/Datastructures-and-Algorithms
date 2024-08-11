@@ -7,10 +7,10 @@
 
 import Foundation
 
-class BubbleSort<T: Comparable>: Sort {
-  private(set) var elements: [T] = []
+public class BubbleSort<T: Comparable>: Sort {
+  private(set) public var elements: [T] = []
   
-  required init(elements: [T]) {
+  public required init(elements: [T]) {
     self.elements = sort(array: elements)
   }
   

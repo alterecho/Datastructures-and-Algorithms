@@ -7,15 +7,15 @@
 
 import Foundation
 
-class LongestSubstring: Solution {
+public class LongestSubstring: Solution {
   
   private let input: String
   
-  required init(input: String = "abcabcbb") {
+  public required init(input: String = "abcabcbb") {
     self.input = input
   }
     
-  var problemStatement: String {
+  public var problemStatement: String {
     return "Given a string s, find the length of the longest substring without repeating characters."
   }
   
@@ -51,7 +51,7 @@ class LongestSubstring: Solution {
   }
 
   @discardableResult
-  func execute() -> Int? {
+  public func execute() -> Int? {
     let longest = lengthOfLongestSubstring_my(input: input)
     print(
       String(

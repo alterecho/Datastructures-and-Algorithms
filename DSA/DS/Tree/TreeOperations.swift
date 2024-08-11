@@ -7,11 +7,11 @@
 
 import Foundation
 
-enum TreeOperations {
-  enum Error: Swift.Error {
+public enum TreeOperations {
+  public enum Error: Swift.Error {
     case noRoot
   }
-  static func invert<T: Equatable>(binaryTree: BinaryTree<T>) throws -> BinaryTree<T> {
+  public static func invert<T: Equatable>(binaryTree: BinaryTree<T>) throws -> BinaryTree<T> {
     guard let root  = binaryTree.root else {
       throw Error.noRoot
     }

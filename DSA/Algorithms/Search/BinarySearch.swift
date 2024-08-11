@@ -7,10 +7,10 @@
 
 import Foundation
 
-class BinarySearch<T: Comparable>: Search {
+public class BinarySearch<T: Comparable>: Search {
   private let elements: [T]
   
-  init(elements: [T]) {
+  public init(elements: [T]) {
     self.elements = elements
   }
   
@@ -55,7 +55,7 @@ class BinarySearch<T: Comparable>: Search {
     return nil
   }
 
-  func find(_ target: T) -> Int? {
+  public func find(_ target: T) -> Int? {
     return binarySearch_recursive(target: target)
   }
 }

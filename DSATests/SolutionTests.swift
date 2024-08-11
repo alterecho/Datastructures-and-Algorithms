@@ -103,8 +103,8 @@ final class SolutionTests: XCTestCase {
   
   func test_reverseLinkedList() {
     let expectations = [(
-      input: LinkedList<Int>(1, 2, 3, 4),
-      expectedOutput: LinkedList<Int>(4, 3, 2, 1)
+      input: LinkedList(1, 2, 3, 4),
+      expectedOutput: LinkedList(4, 3, 2, 1)
     )]
     
     

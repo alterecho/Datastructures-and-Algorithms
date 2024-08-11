@@ -1,7 +1,7 @@
 {
   "configurations" : [
     {
-      "id" : "3624E871-2C1A-42E5-AD82-84619213F4D6",
+      "id" : "5EA0C42C-AADF-439C-ADFF-6D7AB51BF978",
       "name" : "Configuration 1",
       "options" : {
 
@@ -9,13 +9,17 @@
     }
   ],
   "defaultOptions" : {
-
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:DSA.xcodeproj",
+      "identifier" : "577ECC1A2C68D8E200E43E2E",
+      "name" : "DSA"
+    }
   },
   "testTargets" : [
     {
       "target" : {
         "containerPath" : "container:DSA.xcodeproj",
-        "identifier" : "57E502CD2C5F94A5007A6115",
+        "identifier" : "577ECC232C68D8E200E43E2E",
         "name" : "DSATests"
       }
     }

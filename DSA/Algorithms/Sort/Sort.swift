@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol Sort {
+public protocol Sort {
   associatedtype T: Comparable
   
   init(elements: [T])

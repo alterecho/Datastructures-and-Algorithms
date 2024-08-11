@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol Search {
+public protocol Search {
   associatedtype T: Comparable
   func find(_: T) -> Int?
 }

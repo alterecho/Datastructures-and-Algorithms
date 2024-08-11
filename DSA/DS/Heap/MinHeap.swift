@@ -7,10 +7,10 @@
 
 import Foundation
 
-struct MinHeap<T: Comparable>: Heap {
-  private(set) var array: [T] = []
+public struct MinHeap<T: Comparable>: Heap {
+  private(set) public var array: [T] = []
   
-  init(array: [T]) {
+  public init(array: [T]) {
     self.array = array
     heapify()
   }

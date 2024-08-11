@@ -7,10 +7,10 @@
 
 import Foundation
 
-class MergeSort<T: Comparable>: Sort {
-  private(set) var elements: [T] = []
+public class MergeSort<T: Comparable>: Sort {
+  public private(set) var elements: [T] = []
   
-  required init(elements: [T]) {
+  public required init(elements: [T]) {
     self.elements = sort(elements: elements)
   }
   
@@ -24,7 +24,7 @@ class MergeSort<T: Comparable>: Sort {
     return merge(array1: leftArray, array2: rightArray)
   }
   
-  func merge(array1: [T], array2: [T]) -> [T]{
+  public func merge(array1: [T], array2: [T]) -> [T]{
     var index1 = 0, index2 = 0
     var array = [T]()
     while index1 < array1.count && index2 < array2.count {

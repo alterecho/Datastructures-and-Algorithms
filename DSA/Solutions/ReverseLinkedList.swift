@@ -7,21 +7,21 @@
 
 import Foundation
 
-class ReverseLinkedList: Solution {
+public class ReverseLinkedList: Solution {
   
   private let input: LinkedList<Int>
   
-  required init(
+  public required init(
     input: LinkedList<Int> = LinkedList(1, 2, 4, 1, 3, 4)
   ) {
     self.input = input
   }
 
-  var problemStatement: String {
+  public var problemStatement: String {
     "Reverse a linked list"
   }
     
-  func execute() -> LinkedList<Int>? {
+  public func execute() -> LinkedList<Int>? {
     var iterator = input.root
     print("before reverse: \(input)")
     while iterator != nil {

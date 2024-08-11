@@ -9,16 +9,16 @@ import Foundation
 
 public class AmazonInterviewQ1: Solution {
   
-  typealias Input = (word: String, a: Int, b: Int)
+  public typealias Input = (word: String, a: Int, b: Int)
   
   let input: Input
   
-  required init(input: Input) {
+  public required init(input: Input) {
     self.input = input
   }
   
 
-  var problemStatement: String {
+  public var problemStatement: String {
   """
   Data analysts at Amazon are building a utility to identify redundant words in advertisements.
   They define a string as redundant if the length of the
@@ -53,7 +53,7 @@ public class AmazonInterviewQ1: Solution {
     return charArray.count == (input.a * numberOfVowels + input.b * numberOfConsonants)
   }
   
-  func execute() -> Int? {
+  public func execute() -> Int? {
     var numberOfRedundant = 0
     let characterArray = Array(input.word)
     for i in 0..<characterArray.count {

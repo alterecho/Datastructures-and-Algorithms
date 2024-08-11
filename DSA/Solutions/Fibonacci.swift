@@ -16,13 +16,13 @@ import Foundation
                                  8 + 5 = 13
 */
 public class Fibonacci: Solution {
-  var problemStatement: String {
+  public var problemStatement: String {
     return "Fibonacci"
   }
   
   private let input: Int
   
-  required init(input: Int = 3) {
+  public required init(input: Int = 3) {
     self.input = input
   }
   
@@ -55,7 +55,7 @@ public class Fibonacci: Solution {
   }
 
   @discardableResult
-  func execute() -> Int? {
+  public func execute() -> Int? {
     return fibonacci_dynamic(
       count: input
     )
