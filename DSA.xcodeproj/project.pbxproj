@@ -39,6 +39,7 @@
 		577ECC6F2C68D95A00E43E2E /* HeapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577ECC422C68D94400E43E2E /* HeapTests.swift */; };
 		577ECC702C68D95A00E43E2E /* SolutionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577ECC392C68D94400E43E2E /* SolutionTests.swift */; };
 		577ECC712C68D95A00E43E2E /* TreeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577ECC3A2C68D94400E43E2E /* TreeTests.swift */; };
+		577ECC7C2C6A51F300E43E2E /* MaxSubArray2nd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577ECC7B2C6A51F300E43E2E /* MaxSubArray2nd.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +87,7 @@
 		577ECC4E2C68D94500E43E2E /* MinHeap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinHeap.swift; sourceTree = "<group>"; };
 		577ECC4F2C68D94500E43E2E /* Sort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sort.swift; sourceTree = "<group>"; };
 		577ECC7A2C68F54C00E43E2E /* DSA.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = DSA.xctestplan; path = DSATests/DSA.xctestplan; sourceTree = "<group>"; };
+		577ECC7B2C6A51F300E43E2E /* MaxSubArray2nd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxSubArray2nd.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +196,7 @@
 			children = (
 				577ECC362C68D94400E43E2E /* Solution.swift */,
 				577ECC342C68D94400E43E2E /* MaxSubArray.swift */,
+				577ECC7B2C6A51F300E43E2E /* MaxSubArray2nd.swift */,
 				577ECC4C2C68D94500E43E2E /* MergeSortedLists.swift */,
 				577ECC472C68D94400E43E2E /* ReverseLinkedList.swift */,
 				577ECC452C68D94400E43E2E /* TwoSum.swift */,
@@ -354,6 +357,7 @@
 				577ECC642C68D94500E43E2E /* ReverseLinkedList.swift in Sources */,
 				577ECC602C68D94500E43E2E /* MergeSort.swift in Sources */,
 				577ECC552C68D94500E43E2E /* LongestSubstring.swift in Sources */,
+				577ECC7C2C6A51F300E43E2E /* MaxSubArray2nd.swift in Sources */,
 				577ECC512C68D94500E43E2E /* MaxSubArray.swift in Sources */,
 				577ECC1F2C68D8E200E43E2E /* DSA.docc in Sources */,
 				577ECC622C68D94500E43E2E /* TwoSum.swift in Sources */,

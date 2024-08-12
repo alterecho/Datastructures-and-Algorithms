@@ -52,8 +52,15 @@ final class SolutionTests: XCTestCase {
       MaxSubArray(input: [-2, 1, -3, 4, -1, 2, 1, -5, 4]).execute(),
       6
     )
-  }                     
+  }        
   
+  func test_maxSubArray2nd() {
+    XCTAssertEqual(
+      MaxSubArray2nd(input: (array: [1, 2, 3, 4, 5], windowSize: 3)).execute(),
+      12
+    )
+  }
+
   func test_fibonacci() {
     let expectations: [
       (input: Int, expectedOutput: Int)
