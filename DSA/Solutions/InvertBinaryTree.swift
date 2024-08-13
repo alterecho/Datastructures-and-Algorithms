@@ -1,22 +1,32 @@
 //
-//  TreeOperations.swift
+//  InvertBinaryTree.swift
 //  DSA
 //
-//  Created by Vijaychandran Jayachandran on 11/8/24.
+//  Created by Vijaychandran Jayachandran on 13/8/24.
 //
 
 import Foundation
 
-public enum TreeOperations {
-  public enum Error: Swift.Error {
-    case noRoot
+public class InvertBinaryTree: Solution {
+  
+  private let binaryTree: BinaryTree<Int>
+  
+  public required init(
+    input: BinaryTree<Int>
+  ) {
+    self.binaryTree = input
   }
-  public static func invert<T: Equatable>(binaryTree: BinaryTree<T>) throws -> BinaryTree<T> {
+
+  public var problemStatement: String {
+    "Invert a binary tree"
+  }
+    
+  public func execute() -> BinaryTree<Int>? {
     guard let root  = binaryTree.root else {
-      throw Error.noRoot
+      return nil
     }
     
-    var stack = [BinaryTree<T>.Node]()
+    var stack = [BinaryTree<Int>.Node]()
     stack.append(root)
     
     while let node = stack.popLast() {
@@ -33,7 +43,8 @@ public enum TreeOperations {
         stack.append(rightNode)
       }
     }
-    
+
     return binaryTree
   }
 }
+
