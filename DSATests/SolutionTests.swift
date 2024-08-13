@@ -60,6 +60,13 @@ final class SolutionTests: XCTestCase {
       12
     )
   }
+  
+  func test_smallestSubArray() {
+    XCTAssertEqual(
+      SmallestSubarray(input: (array: [1, 2, 3, 4, 5], target: 3)).execute(),
+      12
+    )
+  }
 
   func test_fibonacci() {
     let expectations: [
