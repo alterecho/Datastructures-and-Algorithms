@@ -9,7 +9,10 @@ import Foundation
 
 public class SmallestSubarray: Solution {
   
-  public typealias Input = (array: [Int], target: Int)
+  public typealias Input = (
+    array: [Int],
+    target: Int
+  )
   let input: Input
   
   public required init(input: Input) {
@@ -18,12 +21,24 @@ public class SmallestSubarray: Solution {
 
   public var problemStatement: String {
 """
-  Maximum Sum of Subarray of Size k, [1, 2, 3, 4, 5], k = 3, output = 12
+  Smallest Subarray with Sum Exactly S
+  [1, 2, 3, 4, 5], target 11, output 3
 """
   }
       
   func minSubArray_attempt(input: Input) -> Int? {
-    return nil
+    var left = 0
+    var sum = 0
+    var min = input.array.count
+    for right in 0..<input.array.count {
+      sum += input.array[right]
+      while sum > input.target {
+        sum -= input.array[left]
+        min = Swift.min(min, right - left + 1)
+        left += 1
+      }
+    }
+    return min
   }
 
   public func execute() -> Int? {

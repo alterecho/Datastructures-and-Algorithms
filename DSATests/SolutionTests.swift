@@ -63,8 +63,13 @@ final class SolutionTests: XCTestCase {
   
   func test_smallestSubArray() {
     XCTAssertEqual(
-      SmallestSubarray(input: (array: [1, 2, 3, 4, 5], target: 3)).execute(),
-      12
+      SmallestSubarray(
+        input: (
+          array: [1, 2, 3, 4, 5],
+          target: 11
+        )
+      ).execute(),
+      3
     )
   }
 
