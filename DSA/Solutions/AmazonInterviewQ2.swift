@@ -7,8 +7,6 @@
 
 import Foundation
 
-import Foundation
-
 public class AmazonInterviewQ2: Solution {
   
   public typealias Input = (server_states: String, k: Int)

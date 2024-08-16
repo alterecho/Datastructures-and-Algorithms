@@ -24,7 +24,9 @@ final class SortAlgorithmTests: XCTestCase {
       (input: [0],
        expectedOutput: [0]),
       (input: [],
-       expectedOutput: [])
+       expectedOutput: []),
+      (input: [3, 6, 8, 10, 1, 2, 1],
+       expectedOutput:  [1, 1, 2, 3, 6, 8, 10])
     ]
   }
   

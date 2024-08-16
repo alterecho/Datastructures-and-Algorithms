@@ -26,6 +26,6 @@ public class QuickSort<T: Comparable>: Sort {
     let equalToArray = elements.filter { $0 == mid }
     let greaterThanArray = elements.filter { $0 > mid }
     
-    return sort(elements: lessThanArray) + sort(elements: equalToArray) + sort(elements: greaterThanArray)
+    return sort(elements: lessThanArray) + equalToArray + sort(elements: greaterThanArray)
   }
 }

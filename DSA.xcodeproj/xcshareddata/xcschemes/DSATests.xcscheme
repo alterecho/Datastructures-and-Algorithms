@@ -19,7 +19,7 @@
             parallelizable = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "57E502CD2C5F94A5007A6115"
+               BlueprintIdentifier = "577ECC232C68D8E200E43E2E"
                BuildableName = "DSATests.xctest"
                BlueprintName = "DSATests"
                ReferencedContainer = "container:DSA.xcodeproj">
