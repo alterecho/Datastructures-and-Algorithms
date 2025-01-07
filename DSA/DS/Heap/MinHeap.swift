@@ -18,14 +18,14 @@ public struct MinHeap<T: Comparable>: Heap {
   func insert(_: T) {
     
   }
-  
-  func remove() -> T? {
-    nil
-  }
-  
+    
   func peek() -> T? {
-    nil
+      return array.first
   }
+    
+    func extract() -> T? {
+        return array.first
+    }
   
   mutating func heapify_recursive(rootIndex i_root: Int? = nil) {
     guard let i_root = i_root else {
@@ -77,7 +77,7 @@ public struct MinHeap<T: Comparable>: Heap {
     }
   }
   
-  mutating func heapify() {
+private mutating func heapify() {
     heapify_iterative()
   }
 }

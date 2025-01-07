@@ -12,8 +12,8 @@ protocol Heap {
   
   init(array: [T])
   var array: [T] { get }
-  func insert(_: T)
-  func remove() -> T?
+  
   func peek() -> T?
-  mutating func heapify()
+    mutating func insert(_: T)
+    mutating func extract() -> T?
 }
