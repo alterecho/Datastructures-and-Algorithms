@@ -15,22 +15,26 @@ public struct MinHeap<T: Comparable>: Heap {
     heapify()
   }
   
-  func insert(_: T) {
-    
+  mutating func insert(_ element: T) {
+      array.append(element)
+      siftUp(index: array.count - 1)
+      
   }
     
   func peek() -> T? {
       return array.first
   }
     
-    func extract() -> T? {
-        return array.first
+    mutating func extract() -> T? {
+        let min = array.removeFirst()
+        siftDown_iterative(index: 0)
+        return min
     }
   
-  mutating func heapify_recursive(rootIndex i_root: Int? = nil) {
+  private mutating func siftDown_recursive(rootIndex i_root: Int? = nil) {
     guard let i_root = i_root else {
       for i in (0...((array.count / 2) - 1)).reversed() {
-        heapify_recursive(rootIndex: i)
+          siftDown_recursive(rootIndex: i)
       }
       return
     }
@@ -49,16 +53,16 @@ public struct MinHeap<T: Comparable>: Heap {
     
     if i_min != i_root {
       array.swapAt(i_min, i_root)
-      heapify_recursive(rootIndex: i_root)
+        siftDown_recursive(rootIndex: i_root)
     }
   }
   
-  mutating func heapify_iterative() {
-    var i_root = ((array.count / 2) - 1)
-    while i_root > -1 {
-      let i_leftChild = 2 * i_root + 1
-      let i_rightChild = 2 * i_root + 2
-      var i_min = i_root
+    private mutating func siftDown_iterative(index: Int) {
+    var i_parent = index
+    while i_parent > -1 {
+      let i_leftChild = 2 * i_parent + 1
+      let i_rightChild = 2 * i_parent + 2
+      var i_min = i_parent
       
       if i_leftChild < array.count && array[i_leftChild] < array[i_min] {
         i_min = i_leftChild
@@ -68,16 +72,27 @@ public struct MinHeap<T: Comparable>: Heap {
         i_min = i_rightChild
       }
       
-      if i_min != i_root {
-        array.swapAt(i_min, i_root)
-        i_root = i_min
+      if i_min != i_parent {
+          array.swapAt(i_min, i_parent)
+          i_parent = i_min
       } else {
-        i_root -= 1
+          i_parent -= 1
       }
     }
   }
+    
+    private mutating func siftUp(index: Int) {
+        var i_node = index
+        while i_node > -1 {
+            let i_parentIndex = (i_node - 1) / 2
+            if array[i_node] < array[i_parentIndex] {
+                array.swapAt(i_parentIndex, i_node)
+            }
+            i_node -= 1
+        }
+    }
   
 private mutating func heapify() {
-    heapify_iterative()
+    siftDown_iterative(index: array.count / 2 - 1)
   }
 }

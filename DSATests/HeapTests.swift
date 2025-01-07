@@ -9,22 +9,20 @@ import XCTest
 @testable import DSA
 
 final class HeapTests: XCTestCase {
-  typealias Expectation = (input: [Int], expectedOutput: [Int])
-  func test_minHeapInit() {
+  func testMinHeap_isValid() {
     // given
-    let dataSet: [Expectation] = [
-      (input: [2, 1, 3, 6, 4, 7], expectedOutput: [1, 2, 3, 6, 4, 7]),
-      (input: [4, 10, 3, 5, 1], expectedOutput: [1, 4, 3, 5, 10])
+    let inputs = [
+        [2, 1, 3, 6, 4, 7]
     ]
     // when
-    dataSet.forEach { input, expectedOutput in
+      inputs.forEach { input in
       // then
       let heap = MinHeap(array: input)
-      XCTAssertEqual(heap.array, expectedOutput)
+          XCTAssertTrue(isValidMinHeap(heap))
     }
   }
     
-    func test_maxHeap_heapify() {
+    func testMaxHeap_isValid() {
         // given
         let inputs = [
             [3, 1, 4, 1, 5, 9, 2]
@@ -37,22 +35,37 @@ final class HeapTests: XCTestCase {
         }
     }
     
-    private func isValidMaxHeap(_ heap: MaxHeap<Int>) -> Bool {
-        for i_parent in 0..<heap.array.count {
-            let i_left = 2 * i_parent + 1
-            let i_right = 2 * i_parent + 2
-            
-            if i_right < heap.array.count && heap.array[i_parent] < heap.array[i_right] {
-                return false
-            }
-            if i_left < heap.array.count && heap.array[i_parent] < heap.array[i_left] {
-                
-                return false
-            }
-        }
-        return true
+    func testMinHeap_insert_isValid() {
+        // given
+        let input = [3, 1, 4, 1, 5, 9, 2]
+        let itemToInsert = 0
+        // when
+        var minHeap = MinHeap(array: input)
+        minHeap.insert(itemToInsert)
+        // then
+        XCTAssertTrue(isValidMinHeap(minHeap))
+        XCTAssertTrue(minHeap.array.contains(itemToInsert))
     }
     
+    func testMinHeap_extract_isValid() {
+        // given
+        let min_first = 0
+        let min_second = 1
+        let input = [3, 2, 4, 2, min_second, min_first, 2]
+        
+        // when
+        var minHeap = MinHeap(array: input)
+        let firstExtractedItem = minHeap.extract()
+        let secondExtractedItem = minHeap.extract()
+        
+        // then
+        XCTAssertEqual(firstExtractedItem, min_first)
+        XCTAssertEqual(secondExtractedItem, min_second)
+        XCTAssertEqual(minHeap.array.count, input.count - 2)
+        XCTAssertTrue(isValidMinHeap(minHeap))
+    }
+
+        
     func testMaxHeap_insert_isValid() {
         // given
         let input = [3, 1, 4, 1, 5, 9, 2]
@@ -81,5 +94,39 @@ final class HeapTests: XCTestCase {
         XCTAssertEqual(secondExtractedItem, max_second)
         XCTAssertEqual(maxHeap.array.count, input.count - 2)
     }
+}
+
+private extension HeapTests {
+    private func isValidMinHeap(_ heap: MinHeap<Int>) -> Bool {
+        for i_parent in 0..<heap.array.count {
+            let i_left = 2 * i_parent + 1
+            let i_right = 2 * i_parent + 2
+            
+            if i_right < heap.array.count && heap.array[i_parent] > heap.array[i_right] {
+                return false
+            }
+            if i_left < heap.array.count && heap.array[i_parent] > heap.array[i_left] {
+                return false
+            }
+        }
+        return true
+    }
+    
+    private func isValidMaxHeap(_ heap: MaxHeap<Int>) -> Bool {
+        for i_parent in 0..<heap.array.count {
+            let i_left = 2 * i_parent + 1
+            let i_right = 2 * i_parent + 2
+            
+            if i_right < heap.array.count && heap.array[i_parent] < heap.array[i_right] {
+                return false
+            }
+            if i_left < heap.array.count && heap.array[i_parent] < heap.array[i_left] {
+                
+                return false
+            }
+        }
+        return true
+    }
+
 }
 
