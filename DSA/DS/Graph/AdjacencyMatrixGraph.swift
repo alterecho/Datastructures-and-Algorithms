@@ -9,8 +9,8 @@ import Foundation
 
 struct AdjacencyListGraph<Vertex: Comparable & Hashable>: Graph {
   private var adjList = [[Vertex]]()
-  private var vertexIndices = [Vertex : Int]()
-  private var indexVertices = [Int: Vertex]()
+  private var vertexIndexMap = [Vertex : Int]()
+  private var indexVertexMap = [Int: Vertex]()
 
   var description: String {
     return adjList.reduce("") { partialResult, array in
@@ -26,31 +26,31 @@ struct AdjacencyListGraph<Vertex: Comparable & Hashable>: Graph {
   }
 
   mutating func addIfNotPresent(vertex: Vertex) {
-    guard vertexIndices[vertex] == nil else {
+    guard vertexIndexMap[vertex] == nil else {
       return
     }
     
     adjList.append([vertex])
     let index = adjList.count - 1
-    vertexIndices[vertex] = index
-    indexVertices[index] = vertex
+      vertexIndexMap[vertex] = index
+      indexVertexMap[index] = vertex
   }
   
   mutating func add(edge: (Vertex, Vertex)) {
     addIfNotPresent(vertex: edge.0)
     addIfNotPresent(vertex: edge.1)
         
-    if let index = vertexIndices[edge.0] {
+    if let index = vertexIndexMap[edge.0] {
       adjList[index].append(edge.1)
     }
     
-    if let index = vertexIndices[edge.0] {
-      adjList[index].append(edge.1)
+    if let index = vertexIndexMap[edge.1] {
+      adjList[index].append(edge.0)
     }
   }
 
   func dfs(vertex: Vertex, visited: inout [Vertex]) {
-    guard let index = vertexIndices[vertex] else {
+      guard let index = vertexIndexMap[vertex] else {
       return
     }
     

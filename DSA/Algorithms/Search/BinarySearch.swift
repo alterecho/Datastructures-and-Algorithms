@@ -24,7 +24,8 @@ public class BinarySearch<T: Comparable>: Search {
       let middle = left + (right - left) / 2
       if middle < 0 {
         return nil
-      } else if sortedElements[middle] == target {
+      }
+    if sortedElements[middle] == target {
         return middle
       } else if target > sortedElements[middle] {
         left = middle + 1
