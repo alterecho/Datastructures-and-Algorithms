@@ -26,13 +26,13 @@ public struct MaxHeap<T: Comparable>: Heap {
     func peek() -> T? {
         return array.first
     }
-    
+
     mutating func extract() -> T? {
-        let max = array.removeFirst();
+        let max = array.removeFirst()
         siftDown(nodeIndex: array.count / 2 - 1)
-        return max;
+        return max
     }
-    
+
     mutating private func siftUp(nodeIndex: Int) {
         guard array.isEmpty == false else { return }
         var i_child = nodeIndex
@@ -44,7 +44,7 @@ public struct MaxHeap<T: Comparable>: Heap {
             i_child -= 1
         }
     }
-    
+
     private mutating func siftDown(nodeIndex: Int) {
         guard array.isEmpty == false else { return }
         var i_parent = nodeIndex
@@ -59,7 +59,7 @@ public struct MaxHeap<T: Comparable>: Heap {
                 i_max = i_right
             }
 
-            if (i_max != i_parent) {
+            if i_max != i_parent {
                 array.swapAt(i_max, i_parent)
                 i_parent = i_max
             } else {

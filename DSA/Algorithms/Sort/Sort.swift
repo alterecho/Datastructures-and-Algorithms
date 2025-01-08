@@ -8,8 +8,8 @@
 import Foundation
 
 public protocol Sort {
-  associatedtype T: Comparable
-  
-  init(elements: [T])
-  var elements: [T] { get }
+    associatedtype T: Comparable
+
+    init(elements: [T])
+    var elements: [T] { get }
 }

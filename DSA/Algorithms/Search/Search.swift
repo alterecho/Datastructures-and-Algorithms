@@ -8,6 +8,6 @@
 import Foundation
 
 public protocol Search {
-  associatedtype T: Comparable
-  func find(_: T) -> Int?
+    associatedtype T: Comparable
+    func find(_: T) -> Int?
 }

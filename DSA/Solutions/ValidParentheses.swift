@@ -8,41 +8,41 @@
 import Foundation
 
 public class ValidParentheses: Solution {
-  public var problemStatement: String {
-"""
-    Given a string containing just the characters '(', ')', '{', '}', '[', and ']'`, determine if the input string is valid. An input string is valid if:
+    public var problemStatement: String {
+        """
+            Given a string containing just the characters '(', ')', '{', '}', '[', and ']'`, determine if the input string is valid. An input string is valid if:
 
-        Open brackets must be closed by the same type of brackets.
-        Open brackets must be closed in the correct order.
-"""
-  }
-  
-  private let input: String
-  
-  public required init(input: String = "()[]{}") {
-    self.input = input
-  }
-  
-  func isValid_gpt(string: String) -> Bool {
-    var stack = [Character]()
-    let pairs: [Character: Character] = [")": "(", "}": "{", "]": "["]
-    
-    for char in string {
-      if let matchingOpen = pairs[char] {
-        if stack.isEmpty || stack.removeLast() != matchingOpen {
-          return false
-        }
-      } else {
-        stack.append(char)
-      }
+                Open brackets must be closed by the same type of brackets.
+                Open brackets must be closed in the correct order.
+        """
     }
-    
-    return stack.isEmpty
-  }
-    
-  public func execute() -> Bool? {
-    let res = isValid_gpt(string: input)
-    print("\(input) isValid (paranthesis): \(res)")
-    return res
-  }
+
+    private let input: String
+
+    public required init(input: String = "()[]{}") {
+        self.input = input
+    }
+
+    func isValid_gpt(string: String) -> Bool {
+        var stack = [Character]()
+        let pairs: [Character: Character] = [")": "(", "}": "{", "]": "["]
+
+        for char in string {
+            if let matchingOpen = pairs[char] {
+                if stack.isEmpty || stack.removeLast() != matchingOpen {
+                    return false
+                }
+            } else {
+                stack.append(char)
+            }
+        }
+
+        return stack.isEmpty
+    }
+
+    public func execute() -> Bool? {
+        let res = isValid_gpt(string: input)
+        print("\(input) isValid (paranthesis): \(res)")
+        return res
+    }
 }

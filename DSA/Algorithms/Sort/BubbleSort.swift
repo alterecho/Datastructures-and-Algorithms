@@ -8,26 +8,26 @@
 import Foundation
 
 public class BubbleSort<T: Comparable>: Sort {
-  private(set) public var elements: [T] = []
-  
-  public required init(elements: [T]) {
-    self.elements = sort(array: elements)
-  }
-  
-  private func sort(array: [T]) -> [T] {
-    var array = array
-    var swapped = false
-    for i in 0..<array.count {
-      for j in 0..<array.count - i - 1 {
-        if array[j] > array[j + 1] {
-          array.swapAt(j, j + 1)
-          swapped = true
-        }
-      }
-      if swapped == false {
-        return array
-      }
+    private(set) public var elements: [T] = []
+
+    public required init(elements: [T]) {
+        self.elements = sort(array: elements)
     }
-    return array
-  }
+
+    private func sort(array: [T]) -> [T] {
+        var array = array
+        var swapped = false
+        for i in 0..<array.count {
+            for j in 0..<array.count - i - 1 {
+                if array[j] > array[j + 1] {
+                    array.swapAt(j, j + 1)
+                    swapped = true
+                }
+            }
+            if swapped == false {
+                return array
+            }
+        }
+        return array
+    }
 }
