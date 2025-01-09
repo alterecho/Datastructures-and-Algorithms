@@ -8,7 +8,7 @@
 import Foundation
 
 /*
- F(n)=F(n−1)+F(n−2)F(n)=F(n−1)+F(n−2) for n≥2n≥2
+ F(n)=F(n−1)+F(n−2) for n≥2n≥2
  1 + 1 = 2
          2 + 1 = 3
                  3 + 2 = 5
@@ -30,12 +30,7 @@ public class Fibonacci: Solution {
         guard count > 1 else {
             return count
         }
-        return fibonacci_recursive(
-            count: count - 1
-        )
-            + fibonacci_recursive(
-                count: count - 2
-            )
+        return fibonacci_recursive(count: count - 1) + fibonacci_recursive(count: count - 2)
     }
 
     //  0 + 1 = 1 + 1 = 2 + 1 = 3 + 2 = 5 + 3 = 8 + 5 = 13
@@ -57,8 +52,6 @@ public class Fibonacci: Solution {
 
     @discardableResult
     public func execute() -> Int? {
-        return fibonacci_dynamic(
-            count: input
-        )
+        return fibonacci_dynamic(count: input)
     }
 }

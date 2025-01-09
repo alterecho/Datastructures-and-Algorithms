@@ -7,6 +7,9 @@
 
 import Foundation
 
+/* Quick Sort (O(n log n) time, O(log n) space): Faster on average but not stable;
+   space-efficient due to in-place partitioning.
+ */
 public class QuickSort<T: Comparable>: Sort {
 
     private(set) public var elements: [T] = []

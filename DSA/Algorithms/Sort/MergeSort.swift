@@ -7,6 +7,8 @@
 
 import Foundation
 
+/* Merge Sort (O(n log n) time, O(n) space): Stable and useful
+   for linked lists or datasets too large for in-place sorting. */
 public class MergeSort<T: Comparable>: Sort {
     public private(set) var elements: [T] = []
 
@@ -38,8 +40,8 @@ public class MergeSort<T: Comparable>: Sort {
             }
         }
 
-        array.append(contentsOf: array1[(index1)...])
-        array.append(contentsOf: array2[(index2)...])
+        array.append(contentsOf: array1[index1...])
+        array.append(contentsOf: array2[index2...])
 
         return array
     }

@@ -40,8 +40,9 @@ public class AmazonInterviewQ2: Solution {
         Sample Input For Custom Testing
         STDIN
         FUNCTION
-        11101010110011
+        11101011000011
         "11101010110011"
+        
         server_states =
         2
         →
@@ -52,7 +53,12 @@ public class AmazonInterviewQ2: Solution {
         It is optimal to apply the special operations on consecutive indices (0-based indexing) as follows:
         • Flip indices [7...91 giving states = "11101011000011"
         • Flip indices [8... 11] giving states = "1110101111111"
-        After 2 operations, a maximum of 8 consecutive ON servers can be obtained.
+        After 2 operations, a maximum of 8 consecutive ON servers can be 
+        0123456789011 <- index
+        11101011000011 <- initial
+        11101010110011 <- 1st
+        1110101111111
+
         """
     }
 
