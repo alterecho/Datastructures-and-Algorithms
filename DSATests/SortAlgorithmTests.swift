@@ -83,4 +83,14 @@ final class SortAlgorithmTests: XCTestCase {
             )
         }
     }
+    
+    func testHeapSort_isValid() {
+        // given
+        // when
+        dataSet.forEach { input, expectedOutput in
+            let sortedArray = HeapSort(elements: input).elements
+            // then
+            XCTAssertEqual(sortedArray, expectedOutput)
+        }
+    }
 }
