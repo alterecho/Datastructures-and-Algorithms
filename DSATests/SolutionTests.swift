@@ -146,13 +146,24 @@ final class SolutionTests: XCTestCase {
         // given
         let expectations = [
             (input: [7, 1, 5, 3, 6, 4], expectedOutput: 5),
-            (input: [7, 6, 4, 3, 1], expectedOutput: 0)
+            (input: [7, 6, 4, 3, 1], expectedOutput: 0),
         ]
         // when
         expectations.forEach { expectation in
             let result = StockBuySell(input: expectation.input).execute()
             // then
             XCTAssertEqual(result, expectation.expectedOutput)
+        }
+    }
+
+    func testPalindrome_IsVaild() {
+        let expectations = [
+            (input: "A man, a plan, a canal: Panama", output: true),
+            (input: "race a car", output: false),
+        ]
+        expectations.forEach { expectation in
+            let isPalindrome = Palindrome(input: expectation.input).execute()
+            XCTAssertEqual(isPalindrome, expectation.output)
         }
     }
 }
