@@ -43,6 +43,7 @@
 		577ECC802C6BA99100E43E2E /* InvertBinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577ECC7F2C6BA99100E43E2E /* InvertBinaryTree.swift */; };
 		57E0B8622C6CC241005C3584 /* IBMInterviewQ2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E0B8612C6CC241005C3584 /* IBMInterviewQ2.swift */; };
 		A00754C12D2FBC980052C9AD /* HeapSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00754C02D2FBC980052C9AD /* HeapSort.swift */; };
+		A00754D12D3217DA0052C9AD /* StockBuySell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00754D02D3217DA0052C9AD /* StockBuySell.swift */; };
 		A0ACDE712D2BEFB500D5E648 /* MaxHeap.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0ACDE702D2BEFB500D5E648 /* MaxHeap.swift */; };
 /* End PBXBuildFile section */
 
@@ -108,6 +109,7 @@
 		57E0B8612C6CC241005C3584 /* IBMInterviewQ2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBMInterviewQ2.swift; sourceTree = "<group>"; };
 		A00754C02D2FBC980052C9AD /* HeapSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeapSort.swift; sourceTree = "<group>"; };
 		A00754C72D2FC1F70052C9AD /* Bench */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Bench; sourceTree = BUILT_PRODUCTS_DIR; };
+		A00754D02D3217DA0052C9AD /* StockBuySell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockBuySell.swift; sourceTree = "<group>"; };
 		A0ACDE702D2BEFB500D5E648 /* MaxHeap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxHeap.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -238,6 +240,7 @@
 				577ECC3E2C68D94400E43E2E /* ValidParentheses.swift */,
 				577ECC382C68D94400E43E2E /* LongestSubstring.swift */,
 				577ECC3C2C68D94400E43E2E /* Fibonacci.swift */,
+				A00754D02D3217DA0052C9AD /* StockBuySell.swift */,
 				577ECC4A2C68D94500E43E2E /* AmazonInterviewQ1.swift */,
 				577ECC402C68D94400E43E2E /* AmazonInterviewQ2.swift */,
 				57E0B8612C6CC241005C3584 /* IBMInterviewQ2.swift */,
@@ -422,6 +425,7 @@
 				577ECC642C68D94500E43E2E /* ReverseLinkedList.swift in Sources */,
 				577ECC602C68D94500E43E2E /* MergeSort.swift in Sources */,
 				577ECC552C68D94500E43E2E /* LongestSubstring.swift in Sources */,
+				A00754D12D3217DA0052C9AD /* StockBuySell.swift in Sources */,
 				577ECC7C2C6A51F300E43E2E /* MaxSubArray2nd.swift in Sources */,
 				577ECC512C68D94500E43E2E /* MaxSubArray.swift in Sources */,
 				577ECC1F2C68D8E200E43E2E /* DSA.docc in Sources */,

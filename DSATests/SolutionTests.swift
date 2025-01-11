@@ -141,4 +141,18 @@ final class SolutionTests: XCTestCase {
             )
         }
     }
+
+    func testStockBuySell_isValid() {
+        // given
+        let expectations = [
+            (input: [7, 1, 5, 3, 6, 4], expectedOutput: 5),
+            (input: [7, 6, 4, 3, 1], expectedOutput: 0)
+        ]
+        // when
+        expectations.forEach { expectation in
+            let result = StockBuySell(input: expectation.input).execute()
+            // then
+            XCTAssertEqual(result, expectation.expectedOutput)
+        }
+    }
 }
