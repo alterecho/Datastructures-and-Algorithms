@@ -156,14 +156,31 @@ final class SolutionTests: XCTestCase {
         }
     }
 
-    func testPalindrome_IsVaild() {
+    func testPalindrome_isVaild() {
+        // given
         let expectations = [
             (input: "A man, a plan, a canal: Panama", output: true),
             (input: "race a car", output: false),
         ]
+        // when
         expectations.forEach { expectation in
             let isPalindrome = Palindrome(input: expectation.input).execute()
+            // then
             XCTAssertEqual(isPalindrome, expectation.output)
         }
+    }
+
+    func testAnagram_isValid() {
+        // given
+        let expectations = [
+            (input: Anagram.Input(s: "anagram", t: "nagaram"), output: true)
+//            (input: Anagram.Input(s: "rat", t: "car"), output: false)
+        ]
+        // when
+        expectations.forEach { expectation in
+            let isAnagram = Anagram(input: expectation.input).execute()
+            XCTAssertEqual(isAnagram, expectation.output)
+        }
+        // then
     }
 }

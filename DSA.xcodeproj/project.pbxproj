@@ -45,6 +45,7 @@
 		A00754C12D2FBC980052C9AD /* HeapSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00754C02D2FBC980052C9AD /* HeapSort.swift */; };
 		A00754D12D3217DA0052C9AD /* StockBuySell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00754D02D3217DA0052C9AD /* StockBuySell.swift */; };
 		A00754D32D325AA20052C9AD /* Palindrome.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00754D22D325AA20052C9AD /* Palindrome.swift */; };
+		A00754D52D3269B60052C9AD /* Anagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00754D42D3269B60052C9AD /* Anagram.swift */; };
 		A0ACDE712D2BEFB500D5E648 /* MaxHeap.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0ACDE702D2BEFB500D5E648 /* MaxHeap.swift */; };
 /* End PBXBuildFile section */
 
@@ -112,6 +113,7 @@
 		A00754C72D2FC1F70052C9AD /* Bench */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Bench; sourceTree = BUILT_PRODUCTS_DIR; };
 		A00754D02D3217DA0052C9AD /* StockBuySell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockBuySell.swift; sourceTree = "<group>"; };
 		A00754D22D325AA20052C9AD /* Palindrome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Palindrome.swift; sourceTree = "<group>"; };
+		A00754D42D3269B60052C9AD /* Anagram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Anagram.swift; sourceTree = "<group>"; };
 		A0ACDE702D2BEFB500D5E648 /* MaxHeap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxHeap.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -244,6 +246,7 @@
 				577ECC3C2C68D94400E43E2E /* Fibonacci.swift */,
 				A00754D02D3217DA0052C9AD /* StockBuySell.swift */,
 				A00754D22D325AA20052C9AD /* Palindrome.swift */,
+				A00754D42D3269B60052C9AD /* Anagram.swift */,
 				577ECC4A2C68D94500E43E2E /* AmazonInterviewQ1.swift */,
 				577ECC402C68D94400E43E2E /* AmazonInterviewQ2.swift */,
 				57E0B8612C6CC241005C3584 /* IBMInterviewQ2.swift */,
@@ -435,6 +438,7 @@
 				577ECC802C6BA99100E43E2E /* InvertBinaryTree.swift in Sources */,
 				577ECC622C68D94500E43E2E /* TwoSum.swift in Sources */,
 				577ECC662C68D94500E43E2E /* AdjacencyMatrixGraph.swift in Sources */,
+				A00754D52D3269B60052C9AD /* Anagram.swift in Sources */,
 				577ECC592C68D94500E43E2E /* Fibonacci.swift in Sources */,
 				577ECC672C68D94500E43E2E /* AmazonInterviewQ1.swift in Sources */,
 				A00754C12D2FBC980052C9AD /* HeapSort.swift in Sources */,
