@@ -174,7 +174,7 @@ final class SolutionTests: XCTestCase {
         // given
         let expectations = [
             (input: Anagram.Input(s: "anagram", t: "nagaram"), output: true)
-//            (input: Anagram.Input(s: "rat", t: "car"), output: false)
+            //            (input: Anagram.Input(s: "rat", t: "car"), output: false)
         ]
         // when
         expectations.forEach { expectation in
@@ -182,5 +182,18 @@ final class SolutionTests: XCTestCase {
             XCTAssertEqual(isAnagram, expectation.output)
         }
         // then
+    }
+
+    func testBinarySearch_isValid() {
+        // given
+        let expectations = [
+            (array: [-1, 0, 3, 5, 9, 12], target: 9, output: 4),
+            (array: [-1, 0, 3, 5, 9, 12], target: 2, output: -1)
+        ]
+        expectations.forEach { input in
+            let result = BinarySearchSolution(input: (num: input.target, array: input.array)).execute()
+            // then
+            XCTAssertEqual(result, input.output)
+        }
     }
 }
