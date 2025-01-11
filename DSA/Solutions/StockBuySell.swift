@@ -43,13 +43,16 @@ public class StockBuySell: Solution {
     }
 
     public func execute() -> Int? {
+        guard input.isEmpty == false else { return nil }
+        
+        var minPrice = input[0]
         var maxProfit = 0
-        for left in stride(from: 0, through: input.count - 1, by: 1) {
-            for right in stride(from: left + 1, through: input.count - 1, by: 1) {
-                maxProfit = max(maxProfit, input[right] - input[left])
-            }
-            print(maxProfit)
+        
+        for price in input {
+            minPrice = min(minPrice, price)
+            maxProfit = max(maxProfit, price - minPrice)
         }
+        
         return maxProfit
     }
 
