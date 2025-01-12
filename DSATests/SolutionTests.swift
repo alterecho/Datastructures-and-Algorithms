@@ -188,12 +188,28 @@ final class SolutionTests: XCTestCase {
         // given
         let expectations = [
             (array: [-1, 0, 3, 5, 9, 12], target: 9, output: 4),
-            (array: [-1, 0, 3, 5, 9, 12], target: 2, output: -1)
+            (array: [-1, 0, 3, 5, 9, 12], target: 2, output: -1),
         ]
         expectations.forEach { input in
-            let result = BinarySearchSolution(input: (num: input.target, array: input.array)).execute()
+            let result = BinarySearchSolution(
+                input: (num: input.target, array: input.array)
+            ).execute()
             // then
             XCTAssertEqual(result, input.output)
+        }
+    }
+
+    func testMaxDepthOfBinaryTree_isValid() {
+        let expectations = [
+            (input: [3, 9, 20, nil, nil, 15, 7], output: 3),
+            (input: [1, nil, 2], output: 2),
+        ]
+        // when
+        expectations.forEach { expectation in
+            let result = MaxDepthOfBinaryTree(input: expectation.input)
+                .execute()
+            //then
+            XCTAssertEqual(result, expectation.output)
         }
     }
 }
