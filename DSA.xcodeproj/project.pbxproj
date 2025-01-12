@@ -48,6 +48,7 @@
 		A00754D52D3269B60052C9AD /* Anagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00754D42D3269B60052C9AD /* Anagram.swift */; };
 		A00754D72D32B5600052C9AD /* BinarySearchSolution.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00754D62D32B5600052C9AD /* BinarySearchSolution.swift */; };
 		A00754D92D33AD7C0052C9AD /* MaxDepthOfBinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00754D82D33AD7C0052C9AD /* MaxDepthOfBinaryTree.swift */; };
+		A00754DB2D33B7C10052C9AD /* TreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00754DA2D33B7C10052C9AD /* TreeNode.swift */; };
 		A0ACDE712D2BEFB500D5E648 /* MaxHeap.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0ACDE702D2BEFB500D5E648 /* MaxHeap.swift */; };
 /* End PBXBuildFile section */
 
@@ -118,6 +119,7 @@
 		A00754D42D3269B60052C9AD /* Anagram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Anagram.swift; sourceTree = "<group>"; };
 		A00754D62D32B5600052C9AD /* BinarySearchSolution.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearchSolution.swift; sourceTree = "<group>"; };
 		A00754D82D33AD7C0052C9AD /* MaxDepthOfBinaryTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxDepthOfBinaryTree.swift; sourceTree = "<group>"; };
+		A00754DA2D33B7C10052C9AD /* TreeNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeNode.swift; sourceTree = "<group>"; };
 		A0ACDE702D2BEFB500D5E648 /* MaxHeap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxHeap.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -230,6 +232,7 @@
 			isa = PBXGroup;
 			children = (
 				577ECC332C68D94400E43E2E /* Tree.swift */,
+				A00754DA2D33B7C10052C9AD /* TreeNode.swift */,
 			);
 			path = Tree;
 			sourceTree = "<group>";
@@ -437,6 +440,7 @@
 				577ECC632C68D94500E43E2E /* Search.swift in Sources */,
 				A00754D72D32B5600052C9AD /* BinarySearchSolution.swift in Sources */,
 				577ECC642C68D94500E43E2E /* ReverseLinkedList.swift in Sources */,
+				A00754DB2D33B7C10052C9AD /* TreeNode.swift in Sources */,
 				577ECC602C68D94500E43E2E /* MergeSort.swift in Sources */,
 				577ECC552C68D94500E43E2E /* LongestSubstring.swift in Sources */,
 				A00754D12D3217DA0052C9AD /* StockBuySell.swift in Sources */,
