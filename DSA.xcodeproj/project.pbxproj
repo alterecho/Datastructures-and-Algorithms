@@ -59,6 +59,7 @@
 		A00754EC2D33D2350052C9AD /* SortedArrayToBinarySearchTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00754EB2D33D2350052C9AD /* SortedArrayToBinarySearchTree.swift */; };
 		A00754EE2D33D6350052C9AD /* MaximumSubarray.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00754ED2D33D6350052C9AD /* MaximumSubarray.swift */; };
 		A00754F02D34B16D0052C9AD /* ClimbingStairs.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00754EF2D34B16D0052C9AD /* ClimbingStairs.swift */; };
+		A00754F22D34EEF00052C9AD /* NOTES.md in Resources */ = {isa = PBXBuildFile; fileRef = A00754F12D34EEF00052C9AD /* NOTES.md */; };
 		A0ACDE712D2BEFB500D5E648 /* MaxHeap.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0ACDE702D2BEFB500D5E648 /* MaxHeap.swift */; };
 /* End PBXBuildFile section */
 
@@ -140,6 +141,7 @@
 		A00754EB2D33D2350052C9AD /* SortedArrayToBinarySearchTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortedArrayToBinarySearchTree.swift; sourceTree = "<group>"; };
 		A00754ED2D33D6350052C9AD /* MaximumSubarray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaximumSubarray.swift; sourceTree = "<group>"; };
 		A00754EF2D34B16D0052C9AD /* ClimbingStairs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimbingStairs.swift; sourceTree = "<group>"; };
+		A00754F12D34EEF00052C9AD /* NOTES.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = NOTES.md; sourceTree = "<group>"; };
 		A0ACDE702D2BEFB500D5E648 /* MaxHeap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxHeap.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -202,6 +204,7 @@
 				577ECC762C68F46B00E43E2E /* Solutions */,
 				577ECC1D2C68D8E200E43E2E /* DSA.h */,
 				577ECC1E2C68D8E200E43E2E /* DSA.docc */,
+				A00754F12D34EEF00052C9AD /* NOTES.md */,
 			);
 			path = DSA;
 			sourceTree = "<group>";
@@ -450,6 +453,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A00754F22D34EEF00052C9AD /* NOTES.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
