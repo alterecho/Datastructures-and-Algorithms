@@ -60,6 +60,7 @@
 		A00754EE2D33D6350052C9AD /* MaximumSubarray.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00754ED2D33D6350052C9AD /* MaximumSubarray.swift */; };
 		A00754F02D34B16D0052C9AD /* ClimbingStairs.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00754EF2D34B16D0052C9AD /* ClimbingStairs.swift */; };
 		A00754F22D34EEF00052C9AD /* NOTES.md in Resources */ = {isa = PBXBuildFile; fileRef = A00754F12D34EEF00052C9AD /* NOTES.md */; };
+		A00754F42D34F67A0052C9AD /* SymmetricTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00754F32D34F67A0052C9AD /* SymmetricTree.swift */; };
 		A0ACDE712D2BEFB500D5E648 /* MaxHeap.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0ACDE702D2BEFB500D5E648 /* MaxHeap.swift */; };
 /* End PBXBuildFile section */
 
@@ -142,6 +143,7 @@
 		A00754ED2D33D6350052C9AD /* MaximumSubarray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaximumSubarray.swift; sourceTree = "<group>"; };
 		A00754EF2D34B16D0052C9AD /* ClimbingStairs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimbingStairs.swift; sourceTree = "<group>"; };
 		A00754F12D34EEF00052C9AD /* NOTES.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = NOTES.md; sourceTree = "<group>"; };
+		A00754F32D34F67A0052C9AD /* SymmetricTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymmetricTree.swift; sourceTree = "<group>"; };
 		A0ACDE702D2BEFB500D5E648 /* MaxHeap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxHeap.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -331,6 +333,7 @@
 				A00754EB2D33D2350052C9AD /* SortedArrayToBinarySearchTree.swift */,
 				A00754ED2D33D6350052C9AD /* MaximumSubarray.swift */,
 				A00754EF2D34B16D0052C9AD /* ClimbingStairs.swift */,
+				A00754F32D34F67A0052C9AD /* SymmetricTree.swift */,
 			);
 			path = TODO;
 			sourceTree = "<group>";
@@ -514,6 +517,7 @@
 				577ECC6A2C68D94500E43E2E /* QuickSort.swift in Sources */,
 				A00754E62D33C8860052C9AD /* ReverseString.swift in Sources */,
 				A0ACDE712D2BEFB500D5E648 /* MaxHeap.swift in Sources */,
+				A00754F42D34F67A0052C9AD /* SymmetricTree.swift in Sources */,
 				A00754EA2D33D13B0052C9AD /* MiddleOfLinkedList.swift in Sources */,
 				577ECC502C68D94500E43E2E /* Tree.swift in Sources */,
 				577ECC652C68D94500E43E2E /* BubbleSort.swift in Sources */,
