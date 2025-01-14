@@ -86,4 +86,3 @@ class BestTimeToBuySellStock2: Solution {
         }
         return profit
     }
-}
