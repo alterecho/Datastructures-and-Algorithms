@@ -212,4 +212,28 @@ final class SolutionTests: XCTestCase {
             XCTAssertEqual(result, expectation.output)
         }
     }
+    
+    //
+    //Input: nums =
+    //Output: [24,12,8,6]
+    //
+    //Example 2:
+    //
+    //Input: nums =
+    //Output:
+
+    func testProductOfArrayExceptSelf_isValid() {
+        // given
+        let expectations = [
+            (input: [1, 2, 3, 4], output: [24, 12, 8, 6]),
+            (input: [-1,1,0,-3,3], output: [0,0,9,0,0])
+        ]
+        
+        // when
+        expectations.forEach { expectation in
+            let result = ProductOfArrayExceptSelf(input: expectation.input).execute()
+            XCTAssertEqual(result, expectation.output)
+        }
+        // then
+    }
 }
