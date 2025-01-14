@@ -212,7 +212,7 @@ final class SolutionTests: XCTestCase {
             XCTAssertEqual(result, expectation.output)
         }
     }
-    
+
     //
     //Input: nums =
     //Output: [24,12,8,6]
@@ -226,14 +226,31 @@ final class SolutionTests: XCTestCase {
         // given
         let expectations = [
             (input: [1, 2, 3, 4], output: [24, 12, 8, 6]),
-            (input: [-1,1,0,-3,3], output: [0,0,9,0,0])
+            (input: [-1, 1, 0, -3, 3], output: [0, 0, 9, 0, 0]),
+        ]
+
+        // when
+        expectations.forEach { expectation in
+            let result = ProductOfArrayExceptSelf(input: expectation.input)
+                .execute()
+            XCTAssertEqual(result, expectation.output)
+        }
+        // then
+    }
+
+    func testBestTimeToBuySellStock2_isValid() {
+        // given
+        let expectations = [
+            (input: [7, 1, 5, 3, 6, 4], output: 7),
+            (input: [1, 2, 3, 4, 5], output: 4),
+            (input: [7, 6, 4, 3, 1], output: 0),
         ]
         
         // when
         expectations.forEach { expectation in
-            let result = ProductOfArrayExceptSelf(input: expectation.input).execute()
+            let result = BestTimeToBuySellStock2(input: expectation.input).execute()
+            // then
             XCTAssertEqual(result, expectation.output)
         }
-        // then
     }
 }
