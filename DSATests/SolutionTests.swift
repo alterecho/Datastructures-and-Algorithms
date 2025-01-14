@@ -233,9 +233,9 @@ final class SolutionTests: XCTestCase {
         expectations.forEach { expectation in
             let result = ProductOfArrayExceptSelf(input: expectation.input)
                 .execute()
+            // then
             XCTAssertEqual(result, expectation.output)
         }
-        // then
     }
 
     func testBestTimeToBuySellStock2_isValid() {
