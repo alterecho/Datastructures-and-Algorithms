@@ -253,4 +253,23 @@ final class SolutionTests: XCTestCase {
             XCTAssertEqual(result, expectation.output)
         }
     }
+    
+    func testFindFirstLastPosition_isValid() {
+        // given
+        let expectations = [
+            (input: (nums: [5, 7, 7, 8, 8, 10], target: 8), expectedOutput: [3, 4]),
+            (input: (nums: [5, 7, 7, 8, 8, 10], target: 6), expectedOutput: [3, 4]),
+            (input: (nums: [1], target: 6), expectedOutput: [3, 4]),
+            (input: (nums: [1, 1], target: 1), expectedOutput: [1, 2]),
+            (input: (nums: [1, 3], target: 1), expectedOutput: [1, 1])
+        ]
+
+        // when
+        expectations.forEach { (input, expectedOutput) in
+            let result = firstLastPosition(in: input.nums, target: input.target)
+            XCTAssertEqual(result, expectedOutput)
+        }
+        
+        // then
+    }
 }
